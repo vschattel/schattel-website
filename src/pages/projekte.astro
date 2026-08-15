@@ -1,0 +1,168 @@
+---
+import Base from "../layouts/Base.astro";
+const cal = "https://calendly.com/volkerschattel/schattel-at-erstberatung";
+const cases = [
+  {
+    id: "personalaufbau", rubrik: "Verantwortung übernehmen", tag: "Personal",
+    titel: "Personalbereich von null aufgebaut",
+    wo: "Mittelständisches Holzbau-Unternehmen, Süddeutschland",
+    ausgangslage: "Das Unternehmen wuchs schneller als seine Verwaltung: kein strukturiertes Recruiting, Bewerbungen versandeten im Postfach, keine digitalen Personalakten, keine geregelten Mitarbeitergespräche, kein Gehaltssystem – Personalarbeit passierte nebenbei.",
+    auftrag: "Im Auftrag der Geschäftsführung: einen funktionierenden Personalbereich aufbauen – neben dem Tagesgeschäft, remote.",
+    eingriff: "Ein DSGVO-konformes, teilautomatisiertes Bewerbermanagement eingeführt und alle Stellen direkt darüber ausgeschrieben – mit deutlich besserer Auffindbarkeit. Das Tool machte Recruiting erstmals zur strukturierten Teamarbeit: Die Fachbereichsleiter konnten nachvollziehbar und zeitnah mitentscheiden und mitrekrutieren. Dazu digitale Personalakte, eingeführte Mitarbeitergespräche, ein nachvollziehbares Gehaltssystem, ein HR-Dashboard für die Geschäftsführung, Grundlagen der Personal- und Organisationsentwicklung – und ein von Grund auf neues Vertragswesen, beginnend bei den Dienstverträgen.",
+    ergebnis: "Rund zehn Positionen besetzt, von der Bedarfsmeldung bis zum Stellenantritt je nach Rolle zwei bis zwölf Wochen. Geordnete Akten, geregelte Gespräche, Transparenz für die Führung.",
+    bleibt: "Der Bereich wurde zum Abschluss mit einer eigenen HR-Kraft besetzt – Tool, Akte, Dashboard und Prozesse laufen seither intern weiter, ohne externe Hilfe."
+  },
+  {
+    id: "recruiting-system", rubrik: "Verantwortung übernehmen", tag: "Recruiting",
+    titel: "Stelle besetzt für einen Bruchteil der üblichen Kosten",
+    wo: "Produktionsbetrieb, Süddeutschland",
+    ausgangslage: "Eine Schlüsselstelle war offen – der klassische Weg stand im Raum: Inserate, eventuell ein Personalberater, mehrere Monate, fünfstellige Kosten.",
+    auftrag: "„Besetzen Sie uns diese Stelle.“",
+    eingriff: "Statt einer Einzelsuche zuerst ein schlankes Bewerbermanagement-Tool eingeführt (DSGVO-konform, unter 50 € im Monat) und die Stelle direkt darüber ausgeschrieben. Strukturierter Rücklauf, schnelle Rückmeldungen, klare Auswahlrunden – der Prozess lief ab Tag eins über das System.",
+    ergebnis: "Besetzt innerhalb weniger Wochen – bewusst anders als ursprünglich gewünscht: Statt einer Leitungsfunktion mit Zuarbeit entstand ein kleines Team mit einer Juniorposition, die in die Stelle hineinwächst. Den Ausschlag gaben Entwicklungsmöglichkeit und die mittelfristig deutlich größere Entlastung der Führung. Gesamtaufwand: rund zehn Beratungsstunden plus Toolkosten – keine Inserate, keine Vermittlungsprovision.",
+    bleibt: "Ein professionelles Bewerbermanagement für jede künftige Ausschreibung – und eine Teamstruktur, die dauerhaft entlastet. Der Auftrag war eine Stelle. Geblieben sind ein System und ein Team."
+  },
+  {
+    id: "besetzungen", rubrik: "Verantwortung übernehmen", tag: "Recruiting",
+    titel: "Schlüsselpositionen in Wochen statt Monaten",
+    wo: "Mehrere KMU, DACH",
+    ausgangslage: "Vakante Schlüsselrollen unter Zeitdruck: kaufmännische Leitung interim, CRM-Spezialist, Vertriebs-Freelancer, dazu die Suche nach einem erfahrenen Restrukturierer.",
+    auftrag: "Besetzen – schnell und passend.",
+    eingriff: "Direkte Ansprache und gezielte Ausschreibung statt Streuinserate, teils ergänzt um Agentur-Kanäle. Strukturierte Bewerberübersichten mit Bewertungskriterien und Ranking, sodass die Entscheidung in einem Termin fiel.",
+    ergebnis: "Besetzungen auch unter schwierigsten Bedingungen in bemerkenswert kurzer Zeit – vom Freelancer bis zur Führungsebene.",
+    bleibt: "Belastbare Kandidaten-Pipelines, wiederverwendbare Auswahlraster – und Menschen, die tragen."
+  },
+  {
+    id: "liquiditaet", rubrik: "Verantwortung übernehmen", tag: "Finanzen",
+    titel: "Liquidität im Griff: 13-Wochen-Vorschau statt Blindflug",
+    wo: "Mittelständisches Holzbau-Unternehmen, Süddeutschland",
+    ausgangslage: "Angespannte Liquidität, viele Kreditoren, keine vorausschauende Planung – Entscheidungen fielen reaktiv.",
+    auftrag: "Im Auftrag der Geschäftsführung: Transparenz und Steuerbarkeit herstellen.",
+    eingriff: "Rollierende Liquiditätsplanung aufgebaut, Kreditorenmanagement strukturiert und mit einem eigenen KI-Assistenten unterstützt, der Rechnungen, Fristen und Zahlungsprioritäten vorsortiert – entschieden hat die Geschäftsführung.",
+    ergebnis: "Eine rollierende 13-Wochen-Vorschau statt Blindflug, priorisierte Zahlläufe, verhandelbare Fristen.",
+    bleibt: "Planungslogik und Werkzeug im Haus – Liquidität steuert man vor der Krise."
+  },
+  {
+    id: "vertrieb", rubrik: "Verantwortung übernehmen", tag: "Vertrieb",
+    titel: "B2B-Vertrieb systematisch aufgestellt",
+    wo: "Mittelständisches Holzbau-Unternehmen, Süddeutschland",
+    ausgangslage: "Vertrieb hing an Einzelpersonen und Zufall; gewerbliche Anfragen und Ausschreibungen blieben unbeobachtet.",
+    auftrag: "Den B2B-Vertrieb systematisch aufstellen.",
+    eingriff: "CRM eingeführt (Pipeline-Logik, Aktivitäten, Verantwortlichkeiten), Vertriebs-Freelancer rekrutiert und eingebunden – dazu ein eigener Ausschreibungs-Radar als KI-Werkzeug, der öffentliche Ausschreibungen laufend scannt und passende Treffer meldet.",
+    ergebnis: "Ein bearbeitbarer, messbarer Vertriebstrichter statt Zettelwirtschaft – jede Chance sichtbar, jede Aktivität nachvollziehbar.",
+    bleibt: "CRM, Radar und ein arbeitsfähiges Vertriebsteam."
+  },
+  {
+    id: "rentabilitaet", rubrik: "Daten in Arbeit verwandeln", tag: "Controlling & KI",
+    titel: "Projektrentabilität sichtbar gemacht – in Tagen statt Wochen",
+    wo: "Einrichtungsbetrieb, Süddeutschland",
+    ausgangslage: "Die Rohdaten waren alle da – im ERP, in Excel-Exporten, in PDFs. Aber nie zusammengeführt: Welches Projekt verdient Geld, welches frisst es? Verbesserungsmaßnahmen blieben Bauchgefühl.",
+    auftrag: "Kennzahlen aus dem ERP nutzbar machen – im Raum stand ein klassisches BI-Projekt.",
+    eingriff: "Ein KMU-Cockpit direkt aus den vorhandenen Exporten – LLM-gestützt, ohne ETL-Projekt, ohne neue Infrastruktur. Pilot „Wertschöpfung je Projekt“ mit echten Daten.",
+    ergebnis: "Erste belastbare Rentabilitätssicht nach Tagen – ein klassisches BI-Projekt rechnet in vier bis acht Wochen.",
+    bleibt: "Ein Cockpit, das mit jedem Monatsexport weiterlebt – und erstmals eine Diskussionsgrundlage für Maßnahmen je Projekt."
+  },
+  {
+    id: "massendaten", rubrik: "Daten in Arbeit verwandeln", tag: "Daten",
+    titel: "Über 5.000 Datensätze veredelt",
+    wo: "Großes österreichisches Medienhaus",
+    ausgangslage: "Ein reichweitenstarkes Tourenportal mit über 5.000 Einträgen – gewachsen, aber unrund: fehlende Geo-Zuordnungen, Duplikate, lückenhafte Bilder und Inhalte, ungenutzte Keyword-Potenziale.",
+    auftrag: "Datenqualität und Auffindbarkeit heben, ohne Redaktions-Großprojekt.",
+    eingriff: "KI-gestützte Massenanreicherung: Land- und Regionszuordnung für den gesamten Bestand, Duplikaterkennung, Content-Audit, gezielte Optimierung der wichtigsten Inhalte. Der Mensch prüft, die Maschine schuftet.",
+    ergebnis: "Über 5.000 Datensätze systematisch bereinigt und angereichert – in Wochen, nicht in Redaktionsjahren.",
+    bleibt: "Eine saubere Datenbasis plus eine wiederholbare Anreicherungs-Pipeline."
+  },
+  {
+    id: "katalog", rubrik: "Daten in Arbeit verwandeln", tag: "E-Commerce",
+    titel: "Produktkatalog migriert: zehntausende Artikel statt Handarbeit",
+    wo: "Teilehandel, Deutschland",
+    ausgangslage: "Lieferanten-Kataloge in unterschiedlichsten Formaten, der eigene Onlineshop wartete auf die Daten – manuell ein Fass ohne Boden.",
+    auftrag: "Produktdaten der Großlieferanten sauber in den Shop bringen.",
+    eingriff: "Mapping der Lieferantenformate, ein eigener Konverter (iterativ bis Version 4 verfeinert), Pilot-Sortiment mit direkten Feedbackschleifen – ergänzt um einen Proof of Concept zur Nachfrage- und Wettbewerbsanalyse je Artikel.",
+    ergebnis: "Zehntausende Artikeldaten konvertierbar statt monatelanger Handarbeit, Pilot-Bestand abnahmefertig im Shop.",
+    bleibt: "Der Konverter: Jede künftige Kataloglieferung läuft durch, statt neu erfasst zu werden – Weiterbetrieb im Team geregelt."
+  },
+  {
+    id: "planspiel", rubrik: "Wissen in Werkzeuge gießen", tag: "KI & Kommunikation",
+    titel: "KI-Planspiel für Krisenkommunikation",
+    wo: "Medienhaus, Österreich",
+    ausgangslage: "Wie trainiert man ein Team für den Shitstorm, bevor er passiert? Rollenspiele sind aufwendig, Theorie bleibt folgenlos.",
+    auftrag: "Ein realistisches, wiederholbares Trainingsformat.",
+    eingriff: "Ein KI-Planspiel, das einen Social-Media-Sturm simuliert – trainiert mit echten Kommentardaten, mehrere Eskalationsstufen, Drehbuch und Auswertung. Vom Briefing zum spielbaren Prototyp in unter drei Monaten.",
+    ergebnis: "Eine einsatzfähige Simulation, mit Kunden getestet – eingereicht zum Tiroler Innovationspreis 2026.",
+    bleibt: "Ein Trainingswerkzeug, das beliebig oft und gefahrlos den Ernstfall übt."
+  },
+  {
+    id: "autonome-buchhaltung", rubrik: "Wissen in Werkzeuge gießen", tag: "Finanzen & KI",
+    titel: "Autonome Buchhaltung – geprüft von Menschen",
+    wo: "Eigener Betrieb, Österreich → erster Anwender",
+    ausgangslage: "Die eigene laufende Buchhaltung – Belege, Bankbewegungen, Abstimmung, Umsatzsteuer – kostete wie in jedem Kleinbetrieb wiederkehrende Stunden.",
+    auftrag: "An uns selbst: so weit automatisieren, dass nur noch Entscheidungen übrig bleiben.",
+    eingriff: "Ein KI-Agent direkt an der Buchhaltungssoftware, Stufenmodell Lesen → Vorschlagen → Freigeben → Buchen mit harten Guardrails und einer lernenden Regelbasis – jede Korrektur macht das System besser.",
+    ergebnis: "Belege werden automatisch klassifiziert und gegen Zahlungen gematcht, der Quartalsabschluss ist Kontrolle statt Fleißarbeit. Das Setup läuft inzwischen als übertragbares Paket beim ersten Anwender.",
+    bleibt: "Ein Buchhaltungssystem, das mitlernt – bei uns und beim Kunden. Wir verkaufen nichts, was bei uns nicht selbst im Dauerbetrieb läuft."
+  },
+  {
+    id: "website-relaunch", rubrik: "Wissen in Werkzeuge gießen", tag: "Digital",
+    titel: "Website-Relaunch in fünf Tagen",
+    wo: "Eigener Betrieb (LohnLotsen), Österreich",
+    ausgangslage: "Die Payroll-Marke lief auf einem Baukasten-System – langsam, eingeschränkt, ohne sauberes SEO-Fundament; jede Änderung ein Umweg.",
+    auftrag: "An uns selbst: kompletter Relaunch auf eigenem Stack, ohne Agentur, ohne Ranking-Verlust.",
+    eingriff: "Positionierung geschärft, Design-System gebaut, 19 Seiten samt interaktivem Preisrechner, 13 Blog-Artikel migriert, 24 Weiterleitungen für die SEO-Substanz, DNS-Umzug samt E-Mail-Absicherung – durchgehend KI-gestützt, jede Entscheidung menschlich freigegeben.",
+    ergebnis: "Vom Konzept zum Live-Gang auf der eigenen Domain in fünf Tagen, Umzug ohne Ausfall.",
+    bleibt: "Ein Publish-Workflow, mit dem neue Inhalte in Minuten live gehen – Marketing ohne Agentur-Flaschenhals."
+  },
+];
+const rubriken = ["Verantwortung übernehmen", "Daten in Arbeit verwandeln", "Wissen in Werkzeuge gießen"];
+---
+<Base title="Projekte: Systeme, die bleiben | Schattel" description="Echte Projekte statt Leistungsliste: Personalaufbau, Liquidität, Datenmigration, KI-Werkzeuge. Jedes endet mit dem, was beim Kunden weiterläuft.">
+
+<section style="padding:90px 0 60px">
+  <div class="wrap" style="max-width:860px">
+    <div class="kicker">Projekte</div>
+    <h1 style="font-size:clamp(34px,4.6vw,52px)">Ein Versprechen, <span class="em">viele Beweise.</span></h1>
+    <p class="lead">Keine Leistungsliste, sondern echte Projekte – anonymisiert, aber konkret. Unterschiedliche Branchen, dasselbe Muster: Aufgabe rein, laufendes System raus. Jeder Bericht endet mit dem entscheidenden Absatz: <em>Das bleibt.</em></p>
+  </div>
+</section>
+
+{rubriken.map((rubrik) => (
+  <section style="padding:30px 0">
+    <div class="wrap">
+      <h2 style="font-size:24px;margin-bottom:6px"><span class="em">{rubrik}</span></h2>
+      <hr class="hairline" style="margin:14px 0 0" />
+      {cases.filter(c => c.rubrik === rubrik).map((c) => (
+        <article id={c.id} style="padding:44px 0;border-bottom:1px solid var(--line)">
+          <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:12px">
+            <span class="tag">{c.tag}</span>
+            <span style="font-size:13.5px;color:var(--soft)">{c.wo}</span>
+          </div>
+          <h3 style="font-size:24px;letter-spacing:-.01em">{c.titel}</h3>
+          <div class="zwei" style="display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:20px">
+            <div>
+              <p style="color:var(--soft);font-size:15.5px"><strong style="color:var(--ink)">Ausgangslage.</strong> {c.ausgangslage}</p>
+              <p style="color:var(--soft);font-size:15.5px;margin-top:12px"><strong style="color:var(--ink)">Auftrag.</strong> {c.auftrag}</p>
+              <p style="color:var(--soft);font-size:15.5px;margin-top:12px"><strong style="color:var(--ink)">Eingriff.</strong> {c.eingriff}</p>
+            </div>
+            <div>
+              <p style="color:var(--soft);font-size:15.5px"><strong style="color:var(--ink)">Ergebnis.</strong> {c.ergebnis}</p>
+              <div class="karte" style="margin-top:16px;background:var(--accent-soft);border-color:transparent;padding:22px 24px">
+                <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">Das bleibt</div>
+                <p style="font-size:15.5px">{c.bleibt}</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+))}
+
+<section style="background:var(--dunkel);color:#fff;padding:76px 0;margin-top:40px">
+  <div class="wrap" style="text-align:center;max-width:700px">
+    <h2>Ihr Projekt könnte das nächste sein.</h2>
+    <p style="color:#B9BEC6;margin-bottom:26px">Erstgespräch: Sie schildern die Lage, wir sagen ehrlich, ob und wie wir helfen können. 30 Minuten, remote.</p>
+    <a class="btn hell" href={cal} rel="noopener">Termin buchen</a>
+  </div>
+</section>
+
+</Base>
