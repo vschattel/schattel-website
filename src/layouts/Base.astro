@@ -15,6 +15,12 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:type" content="website" />
+<meta property="og:image" content="https://schattel.at/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <script defer data-domain="schattel.at" src="https://plausible.io/js/script.js"></script>
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
@@ -51,9 +57,11 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
   section{padding:84px 0}
   header.site{border-bottom:1px solid var(--line);background:var(--papier)}
   header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
-  .marke{font-size:21px;letter-spacing:-.01em;text-decoration:none;color:var(--ink);display:block;line-height:1.2}
+  .marke{font-size:21px;letter-spacing:-.01em;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:11px;line-height:1.2}
+  .marke img{width:36px;height:auto;display:block;flex:none}
   .marke b{font-weight:700;display:block}
   .marke span{display:block;font-weight:400;color:var(--soft);font-size:12px;letter-spacing:.01em}
+  footer.familie img.zeichen{width:20px;height:auto;vertical-align:-5px;margin-right:6px}
   nav.main a{color:var(--soft);text-decoration:none;font-size:15px;font-weight:500;margin-left:26px}
   .hairline{border:none;border-top:1px solid var(--line);margin:0}
   .liste{border-left:1px solid #C9C5BB}
@@ -88,7 +96,7 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
 
 <header class="site">
   <div class="wrap">
-    <a class="marke" href="/"><b>Schattel</b><span>Volker Schattel · Unternehmensberatung</span></a>
+    <a class="marke" href="/"><img src="/assets/zeichen-schattel.svg" alt="Schattel" width="64" height="70" /><div><b>Schattel</b><span>Volker Schattel · Unternehmensberatung</span></div></a>
     <nav class="main">
       <a href="/projekte/">Projekte</a>
       <a href="/ueber/">Über uns</a>
@@ -109,7 +117,7 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
 
 <footer class="familie">
   <div class="wrap">
-    <div>© 2026 Schattel · Mag. Volker Schattel · Unternehmensberatung · <a href="/impressum-datenschutz/">Impressum &amp; Datenschutz</a></div>
+    <div><img class="zeichen" src="/assets/zeichen-schattel.svg" alt="" aria-hidden="true" width="64" height="70" />© 2026 Schattel · Mag. Volker Schattel · Unternehmensberatung · <a href="/impressum-datenschutz/">Impressum &amp; Datenschutz</a></div>
     <div>Unsere Payroll-Marke: <strong>LohnLotsen</strong> → <a href="https://lohnlotsen.at" rel="noopener">lohnlotsen.at</a></div>
   </div>
 </footer>
