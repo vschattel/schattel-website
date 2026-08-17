@@ -1,0 +1,67 @@
+---
+import Base from "./Base.astro";
+const { frontmatter } = Astro.props;
+const fmt = (d) => new Date(d).toLocaleDateString("de-AT", { day: "2-digit", month: "2-digit", year: "numeric" });
+const datum = fmt(frontmatter.date);
+const aktualisiert = frontmatter.aktualisiert ? fmt(frontmatter.aktualisiert) : null;
+const cal = "https://calendly.com/volkerschattel/schattel-at-erstberatung";
+---
+<Base title={frontmatter.title + " | Schattel Blog"} description={frontmatter.description}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: frontmatter.title,
+    description: frontmatter.description,
+    datePublished: frontmatter.date,
+    ...(frontmatter.aktualisiert ? { dateModified: frontmatter.aktualisiert } : {}),
+    inLanguage: "de-AT",
+    image: "https://schattel.at/og-image.png",
+    author: {
+      "@type": "Person",
+      name: "Mag. Volker Schattel",
+      jobTitle: "Unternehmensberater",
+      url: "https://schattel.at/ueber/",
+      worksFor: { "@type": "Organization", name: "Schattel", url: "https://schattel.at" }
+    },
+    publisher: { "@type": "Organization", name: "Schattel", url: "https://schattel.at", logo: { "@type": "ImageObject", url: "https://schattel.at/favicon-schattel-512.png" } }
+  })} />
+  <section>
+    <article class="wrap" style="max-width:760px">
+      <div class="kicker">{frontmatter.kategorie}</div>
+      <h1 style="font-size:clamp(30px,4vw,42px)">{frontmatter.title}</h1>
+      <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:32px">
+        <img class="sw" src="/assets/volker.jpg" alt="Mag. Volker Schattel" style="width:44px;height:44px;object-fit:cover;object-position:top;border-radius:50%" />
+        <p style="color:var(--soft);font-size:14px;line-height:1.5">
+          Von <strong style="color:var(--ink);font-weight:600">Mag. Volker Schattel</strong> · Veröffentlicht am {datum}{aktualisiert && <> · Aktualisiert am {aktualisiert}</>}{frontmatter.stand && <> · Stand: {frontmatter.stand}</>}
+        </p>
+      </div>
+      <div class="prosa">
+        <slot />
+      </div>
+      <div class="karte" style="margin-top:44px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+        <img class="sw" src="/assets/volker.jpg" alt="Mag. Volker Schattel" style="width:72px;height:72px;object-fit:cover;object-position:top;border-radius:50%" />
+        <div style="flex:1;min-width:240px">
+          <p style="font-weight:650">Über den Autor</p>
+          <p style="color:var(--soft);font-size:14px;margin-top:4px">Mag. Volker Schattel führt Schattel – Unternehmensberatung in Sistrans bei Innsbruck: 20 Jahre Praxis in HR, Controlling und Restrukturierung, kombiniert mit konsequentem KI-Einsatz. Er übernimmt Führungs- und Umsetzungsaufgaben in KMU im DACH-Raum – remote, dokumentiert, mit Systemen, die danach allein weiterlaufen.</p>
+        </div>
+      </div>
+      <div class="karte" style="margin-top:18px;background:var(--accent-soft);border-color:transparent;text-align:center">
+        <p style="font-weight:650;font-size:19px">Ähnliche Aufgabe im eigenen Betrieb?</p>
+        <p style="color:var(--soft);margin:6px 0 16px">Erstgespräch – kostenlos, remote, 30 Minuten. Sie schildern die Lage, wir sagen ehrlich, ob und wie wir helfen können.</p>
+        <a class="btn primaer plausible-event-name=Termin" href={cal} rel="noopener">Termin buchen</a>
+      </div>
+    </article>
+  </section>
+  <style is:global>
+    .prosa h2 { margin-top: 36px; }
+    .prosa h3 { margin-top: 26px; margin-bottom: 8px; }
+    .prosa p, .prosa ul, .prosa ol { margin-bottom: 16px; }
+    .prosa ul, .prosa ol { padding-left: 24px; }
+    .prosa strong { font-weight: 600; }
+    .prosa a { color: var(--accent); }
+    .prosa blockquote { border-left: 2px solid var(--accent); padding-left: 18px; color: var(--soft); font-family: var(--serif); font-style: italic; font-size: 19px; }
+    .prosa img { max-width: 100%; height: auto; border-radius: var(--radius); }
+    .prosa table { width: 100%; border-collapse: collapse; font-size: 15px; margin-bottom: 16px; }
+    .prosa th, .prosa td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  </style>
+</Base>

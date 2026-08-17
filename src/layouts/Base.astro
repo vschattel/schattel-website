@@ -1,5 +1,5 @@
 ---
-const { title, description } = Astro.props;
+const { title, description, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
 ---
 <!DOCTYPE html>
@@ -10,27 +10,34 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
 <title>{title}</title>
 <meta name="description" content={description} />
 <meta name="author" content="Mag. Volker Schattel" />
+{noindex && <meta name="robots" content="noindex" />}
 <link rel="canonical" href={canonical} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:type" content="website" />
+<meta property="og:site_name" content="Schattel" />
+<meta property="og:locale" content="de_AT" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta property="og:image" content="https://schattel.at/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="icon" href="/favicon.ico" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<script defer data-domain="schattel.at" src="https://plausible.io/js/script.js"></script>
+<script defer data-domain="schattel.at" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Schattel",
   legalName: "Mag. Volker Schattel – Unternehmensberatung",
   url: "https://schattel.at",
+  logo: "https://schattel.at/favicon-schattel-512.png",
+  image: "https://schattel.at/og-image.png",
+  address: { "@type": "PostalAddress", streetAddress: "Perlachweg 574c", postalCode: "6073", addressLocality: "Sistrans", addressCountry: "AT" },
   founder: { "@type": "Person", name: "Mag. Volker Schattel" },
   areaServed: ["AT", "DE", "CH"],
-  sameAs: ["https://lohnlotsen.at"]
+  sameAs: ["https://lohnlotsen.at", "https://www.linkedin.com/in/volkerschattel/"]
 })} />
 <style is:global>
   :root{
@@ -100,14 +107,14 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
     <nav class="main">
       <a href="/projekte/">Projekte</a>
       <a href="/ueber/">Über uns</a>
-      <a class="btn primaer" style="padding:10px 22px;margin-left:26px" href="https://calendly.com/volkerschattel/schattel-at-erstberatung" rel="noopener">Erstgespräch</a>
+      <a class="btn primaer plausible-event-name=Termin" style="padding:10px 22px;margin-left:26px" href="https://calendly.com/volkerschattel/schattel-at-erstberatung" rel="noopener">Erstgespräch</a>
     </nav>
     <details class="mnav">
       <summary aria-label="Menü">☰</summary>
       <div class="menu">
         <a href="/projekte/">Projekte</a>
         <a href="/ueber/">Über uns</a>
-        <a href="https://calendly.com/volkerschattel/schattel-at-erstberatung" rel="noopener">Erstgespräch buchen</a>
+        <a class="plausible-event-name=Termin" href="https://calendly.com/volkerschattel/schattel-at-erstberatung" rel="noopener">Erstgespräch buchen</a>
       </div>
     </details>
   </div>
@@ -117,7 +124,7 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
 
 <footer class="familie">
   <div class="wrap">
-    <div><img class="zeichen" src="/assets/zeichen-schattel.svg" alt="" aria-hidden="true" width="64" height="70" />© 2026 Schattel · Mag. Volker Schattel · Unternehmensberatung · <a href="/impressum-datenschutz/">Impressum &amp; Datenschutz</a></div>
+    <div><img class="zeichen" src="/assets/zeichen-schattel.svg" alt="" aria-hidden="true" width="64" height="70" />© 2026 Schattel · Mag. Volker Schattel · Unternehmensberatung · <a href="tel:+436644601828">+43 664 4601828</a> · <a href="mailto:office@schattel.at">office@schattel.at</a> · <a href="https://www.linkedin.com/in/volkerschattel/" rel="noopener me">LinkedIn</a> · <a href="/impressum-datenschutz/">Impressum &amp; Datenschutz</a></div>
     <div>Unsere Payroll-Marke: <strong>LohnLotsen</strong> → <a href="https://lohnlotsen.at" rel="noopener">lohnlotsen.at</a></div>
   </div>
 </footer>

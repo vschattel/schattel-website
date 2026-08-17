@@ -9,6 +9,19 @@ gemeinsames Dach-Designsystem.
 
 ## Regeln
 
+### Blogartikel
+- Blogartikel sind Markdown-Dateien in `src/pages/blog/` (Layout `src/layouts/BlogPost.astro`,
+  Übersicht `src/pages/blog/index.astro`).
+- Pflicht-Frontmatter: `layout`, `title`, `description`, `date`, `kategorie`, `stand`
+  (Stand der Rechtslage, „Monat Jahr"). Optional: `aktualisiert` (Datum) – wird nur
+  ausgegeben, wenn gesetzt, und landet als `dateModified` im Article-Schema.
+- Autorenzeile immer „Mag. Volker Schattel" mit Foto (Schattel-Regel, keine Hybrid-Autorenzeile).
+- Artikel-Quelle ist die Dropbox-Inbox `beruf/_web/artikel-inbox/` („nimm die Inbox"):
+  übernehmen, nach Freigabe pushen, danach in der Inbox nach `erledigt/` verschieben.
+- **Solange kein Artikel liegt**, setzt die Blog-Übersicht automatisch `noindex` und
+  „Blog" steht NICHT in der Navigation. Mit dem ersten Artikel: „Blog" in `Base.astro`
+  einbauen (`nav.main` zwischen „Über uns" und „Erstgespräch", ebenso in `.mnav`).
+
 ### Design
 - Design ausschließlich über die bestehenden Tokens/Klassen in `src/layouts/Base.astro`.
 - Keine neuen Farben, keine neuen Fonts. Marken-Akzent Bronze `#9A671F`.
