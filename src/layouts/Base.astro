@@ -39,6 +39,17 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
   areaServed: ["AT", "DE", "CH"],
   sameAs: ["https://lohnlotsen.at", "https://www.linkedin.com/in/volkerschattel/"]
 })} />
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Mag. Volker Schattel",
+  jobTitle: "Unternehmensberater",
+  url: "https://schattel.at/",
+  worksFor: { "@type": "Organization", name: "Schattel", url: "https://schattel.at" },
+  knowsAbout: ["Restrukturierung", "Sanierungsbegleitung", "Kaufmännische Führung auf Zeit", "Controlling", "Recruiting", "KI-Automatisierung in KMU"],
+  address: { "@type": "PostalAddress", streetAddress: "Perlachweg 574c", postalCode: "6073", addressLocality: "Sistrans", addressCountry: "AT" },
+  sameAs: ["https://www.linkedin.com/in/volkerschattel/", "https://lohnlotsen.at"]
+})} />
 <style is:global>
   :root{
     --papier:#F4F2ED; --flaeche:#FDFCF9; --ink:#17191E; --soft:#565B63;

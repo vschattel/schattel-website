@@ -1,0 +1,51 @@
+# Schattel
+
+> Unternehmensberatung mit Umsetzung für KMU in Österreich und im DACH-Raum.
+> Wir übernehmen, wo andere beraten: Schattel löst Führungs- und Umsetzungsprobleme in
+> Krise, Wachstum und Umstellung – mit erfahrenem Management und konsequentem Einsatz von KI.
+> Das Ergebnis ist nie ein Foliensatz, sondern ein System, das läuft. Remote, dokumentiert,
+> messbar. Geführt von Mag. Volker Schattel.
+
+## Leistungsfelder
+
+- **Restrukturierung & Sanierungsbegleitung** – Steuerung in der Krise.
+- **Kaufmännische Führung auf Zeit** – Finanzen, Controlling, Reporting.
+- **Personal: Recruiting & Payroll** – Recruiting-Sprints; die laufende Lohnverrechnung
+  läuft über die Payroll-Marke LohnLotsen (lohnlotsen.at).
+- **KI & Automatisierung** – Prozesse und Daten, die allein laufen.
+
+## Belege aus Mandaten
+
+- 20+ Jahre Führungspraxis in HR, Controlling und Restrukturierung.
+- 2–12 Wochen von der Bedarfsmeldung zur besetzten Stelle.
+- 5.000+ Datensätze KI-veredelt in einem einzigen Projekt.
+- 100 % remote, dokumentiert statt anwesend.
+- Personalbereich von null aufgebaut (Holzbau, Süddeutschland): Bewerbermanagement,
+  digitale Akte, Gehaltssystem, HR-Dashboard, rund zehn Positionen besetzt, intern übergeben.
+- Stelle besetzt für einen Bruchteil der üblichen Kosten (Produktionsbetrieb): rund zehn
+  Beratungsstunden, keine Provision.
+- Projektrentabilität sichtbar gemacht (Einrichtungsbetrieb): belastbare Antwort nach Tagen,
+  direkt aus ERP-Exporten, ohne BI-Projekt.
+- Über 5.000 Datensätze veredelt (österreichisches Medienhaus): Geo-Zuordnung, Duplikate,
+  Content-Audit.
+- Autonome Buchhaltung: im eigenen Betrieb im Dauerbetrieb, beim ersten Anwender im Einsatz.
+- Website-Relaunch in fünf Tagen: 19 Seiten, SEO-Migration, DNS-Umzug, ohne Agentur.
+
+## Aufbau
+
+Volker Schattel führt jedes Mandat persönlich. Dahinter: Technik und KI mit eigenen
+Mitarbeitern im Haus, dazu ein eingespieltes Netzwerk aus Freelancern nach Bedarf.
+
+## Kernseiten
+
+- [Startseite](https://schattel.at/): Positionierung, Leistungsfelder, Projekte
+- [Projekte](https://schattel.at/projekte/): Fälle im Detail
+- [Über uns](https://schattel.at/ueber/): Person, Aufbau, Arbeitsweise
+- [Impressum & Datenschutz](https://schattel.at/impressum-datenschutz/)
+
+## Kontakt
+
+- Mag. Volker Schattel, Perlachweg 574c, 6073 Sistrans, Österreich
+- office@schattel.at · +43 664 4601828
+- Kostenloses Erstgespräch (30 Minuten, remote): https://calendly.com/volkerschattel/schattel-at-erstberatung
+- Payroll-Marke: https://lohnlotsen.at
