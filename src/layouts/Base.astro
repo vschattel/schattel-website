@@ -37,6 +37,7 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
   address: { "@type": "PostalAddress", streetAddress: "Perlachweg 574c", postalCode: "6073", addressLocality: "Sistrans", addressCountry: "AT" },
   founder: { "@type": "Person", name: "Mag. Volker Schattel" },
   areaServed: ["AT", "DE", "CH"],
+  knowsAbout: ["Restrukturierung", "Sanierungsbegleitung", "Interim Management", "Kaufmännische Führung", "Controlling", "Liquiditätsplanung", "Recruiting", "Personalverrechnung", "KI-Automatisierung", "Datenmigration"],
   sameAs: ["https://lohnlotsen.at", "https://www.linkedin.com/in/volkerschattel/"]
 })} />
 <script type="application/ld+json" set:html={JSON.stringify({
@@ -85,6 +86,8 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
   .liste{border-left:1px solid #C9C5BB}
   .liste .zeile{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0 20px 24px;border-bottom:1px solid var(--line);position:relative}
   .liste .zeile span{flex:0 0 44%;text-align:right}
+  .liste.stapel .zeile{flex-direction:column;align-items:flex-start;gap:6px}
+  .liste.stapel .zeile span{flex:none;text-align:left;max-width:62ch;line-height:1.55}
   .liste .zeile::before{content:"";position:absolute;left:-3.5px;top:28px;width:6px;height:6px;border-radius:50%;background:var(--ink)}
   .karte{background:var(--flaeche);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
   .grid{display:grid;gap:20px}

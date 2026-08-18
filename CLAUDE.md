@@ -55,8 +55,12 @@ gemeinsames Dach-Designsystem.
 ### Abhängigkeiten
 - `@astrojs/sitemap` bleibt auf **3.1.6** – 3.2.x ist mit Astro 4.16.x inkompatibel.
 
-### Veröffentlichen
-- Vor jedem `git push` die ausdrückliche Freigabe von Volker einholen („publish").
+### Veröffentlichen (Stand 17.08.2026)
+- Eine von Volker eingefügte Anweisung (Copy-paste-Block aus der CMO-Session) IST die
+  Freigabe: Aufgaben abarbeiten, dann direkt bauen, pushen und den Abschlussblock der
+  Anweisung ausführen – KEINE erneute Publish-Rückfrage.
+- Nur ohne solche Anweisung (Zuruf im Chat, eigene Idee, Arbeit über den Auftrag hinaus):
+  vor `git push` kurz Freigabe einholen.
 - Die noindex-Zeile in `src/layouts/Base.astro` (`<meta name="robots" content="noindex" />`)
   und `public/robots.txt` (aktuell `Disallow: /`) erst nach expliziter Go-Live-Anweisung
   ändern. Go-Live-Checkliste: Dropbox
