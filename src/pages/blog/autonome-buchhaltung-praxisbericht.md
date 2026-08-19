@@ -75,6 +75,8 @@ Der Sprung zur GmbH ist dabei kleiner, als er klingt. Ich führe zwar eine Einna
 
 Was bei doppelter Buchhaltung und mehreren Beteiligten tatsächlich dazukommt: Periodenabgrenzung, Personenkonten und offene Posten, Kostenstellen als zusätzliche Dimension, und die Freigabe ist kein Chat-„passt" mehr, sondern das bestehende Vier-Augen-Prinzip – die KI ersetzt die Freigabe nicht, sie füllt sie vor. Bei 800 Eingangsrechnungen im Monat ist der Hebel entsprechend größer als bei 130 im Quartal; das ist eine Hochrechnung, keine Messung, aber die Richtung ist eindeutig. Die Unterschiede im Detail behandelt die [Bauanleitung](/blog/autonome-buchhaltung-bauanleitung/).
 
+Weitere Fälle nach demselben Muster stehen in der [Projektgalerie](/projekte/).
+
 ## Was nicht automatisch geht
 
 Der Altbestand muss einmal aufgeräumt werden, bevor das System produktiv lernt – sonst lernt es die alten Fehler mit. Der Aufbau selbst ist ein Projekt von mehreren Wochen, kein Wochenende. Und das System ist kein Produkt von der Stange: Werkzeuge, Regeln und Wissensspeicher werden auf den Betrieb zugeschnitten.
@@ -88,8 +90,6 @@ Wenn Ihre Software keine offene Schnittstelle hat, ist das kein Grund zum Aufgeb
 ## Der erste Schritt
 
 Wenn Sie wissen wollen, ob das in Ihrem Unternehmen funktioniert – mit Ihrer Software, Ihrem Belegvolumen, Ihren Freigabeprozessen: Genau das klären wir in einem Gespräch. Der typische Einstieg danach ist ein Pilot mit festem Rahmen und definiertem Ende – erst lesen und vorschlagen, noch nicht buchen. Danach entscheiden Sie.
-
-<strong><a class="plausible-event-name=Termin" href="https://calendly.com/volkerschattel/schattel-at-erstberatung" rel="noopener">Vereinbaren Sie hier einen kostenlosen, unverbindlichen Termin für Ihren Automatisierungs-Check.</a></strong>
 
 ---
 *Volker Schattel führt die Unternehmensberatung Schattel und deren Payroll-Marke LohnLotsen. Das hier beschriebene System läuft produktiv in der eigenen Buchhaltung. Stand: 08/2026.*

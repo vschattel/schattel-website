@@ -100,7 +100,8 @@ const cases = [
     auftrag: "An uns selbst: so weit automatisieren, dass nur noch Entscheidungen übrig bleiben.",
     eingriff: "Ein KI-Agent direkt an der Buchhaltungssoftware, Stufenmodell Lesen → Vorschlagen → Freigeben → Buchen mit harten Guardrails und einer lernenden Regelbasis – jede Korrektur macht das System besser.",
     ergebnis: "Belege werden automatisch klassifiziert und gegen Zahlungen gematcht, der Quartalsabschluss ist Kontrolle statt Fleißarbeit. Das Setup läuft inzwischen als übertragbares Paket beim ersten Anwender.",
-    bleibt: "Ein Buchhaltungssystem, das mitlernt – bei uns und beim Kunden. Wir verkaufen nichts, was bei uns nicht selbst im Dauerbetrieb läuft."
+    bleibt: "Ein Buchhaltungssystem, das mitlernt – bei uns und beim Kunden. Wir verkaufen nichts, was bei uns nicht selbst im Dauerbetrieb läuft.",
+    artikel: { text: "Der vollständige Praxisbericht: Wie eine KI unsere Belege kontiert und bucht", href: "/blog/autonome-buchhaltung-praxisbericht/" }
   },
   {
     id: "website-relaunch", rubrik: "Wissen in Werkzeuge gießen", tag: "Digital",
@@ -149,6 +150,7 @@ const rubriken = ["Verantwortung übernehmen", "Daten in Arbeit verwandeln", "Wi
                 <div style="font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">Das bleibt</div>
                 <p style="font-size:15.5px">{c.bleibt}</p>
               </div>
+              {c.artikel && <p style="margin-top:14px;font-size:15px"><a href={c.artikel.href} style="color:var(--accent);font-weight:650;text-decoration:none">{c.artikel.text} →</a></p>}
             </div>
           </div>
         </article>

@@ -189,7 +189,5 @@ Der bewährte Weg in fünf Schritten: Ablage und Stammdaten ordnen. API-Zugang k
 
 Wenn Sie das strukturiert angehen wollen – mit Ihrer Software, Ihrem Volumen, Ihren Prozessen: Genau dafür gibt es unser Erstgespräch. Danach wissen Sie, ob und wo sich der Einstieg bei Ihnen lohnt, und was ein Pilot kosten würde. Entscheiden können Sie dann in Ruhe.
 
-<strong><a class="plausible-event-name=Termin" href="https://calendly.com/volkerschattel/schattel-at-erstberatung" rel="noopener">Vereinbaren Sie hier einen kostenlosen, unverbindlichen Termin für Ihren Automatisierungs-Check.</a></strong>
-
 ---
 *Volker Schattel führt die Unternehmensberatung Schattel und deren Payroll-Marke LohnLotsen. Das beschriebene System läuft produktiv in der eigenen Buchhaltung und wurde auf einen weiteren Betrieb übertragen. Rechtsangaben Stand 08/2026, geprüft am 19.08.2026: E-Rechnung DE – Empfangspflicht seit 01.01.2025, Ausstellungspflicht gestaffelt 2027/2028, <a href="https://www.gesetze-im-internet.de/ustg_1980/__14.html" rel="noopener">§ 14 UStG</a>; AT – B2G über <a href="https://www.erechnung.gv.at/" rel="noopener">erechnung.gv.at</a>, B2B innergemeinschaftlich ab 01.07.2030 über ViDA ((EU) 2025/516); Aufzeichnungspflichten §§ 131 f. <a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940" rel="noopener">BAO</a> bzw. GoBD. Alle Angaben ohne Gewähr, sie ersetzen keine steuerliche Beratung im Einzelfall.*
