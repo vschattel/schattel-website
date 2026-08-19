@@ -9,18 +9,19 @@ const cal = "https://calendly.com/volkerschattel/schattel-at-erstberatung";
 <Base title={frontmatter.title + " | Schattel Blog"} description={frontmatter.description}>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: frontmatter.title,
     description: frontmatter.description,
     datePublished: frontmatter.date,
-    ...(frontmatter.aktualisiert ? { dateModified: frontmatter.aktualisiert } : {}),
+    dateModified: frontmatter.aktualisiert || frontmatter.date,
+    mainEntityOfPage: { "@type": "WebPage", "@id": new URL(Astro.url.pathname, "https://schattel.at").href },
     inLanguage: "de-AT",
     image: "https://schattel.at/og-image.png",
     author: {
       "@type": "Person",
       name: "Mag. Volker Schattel",
       jobTitle: "Unternehmensberater",
-      url: "https://schattel.at/ueber/",
+      url: "https://schattel.at/",
       worksFor: { "@type": "Organization", name: "Schattel", url: "https://schattel.at" }
     },
     publisher: { "@type": "Organization", name: "Schattel", url: "https://schattel.at", logo: { "@type": "ImageObject", url: "https://schattel.at/favicon-schattel-512.png" } }
@@ -31,7 +32,7 @@ const cal = "https://calendly.com/volkerschattel/schattel-at-erstberatung";
       <h1 style="font-size:clamp(30px,4vw,42px)">{frontmatter.title}</h1>
       <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:32px">
         <img class="sw" src="/assets/volker.jpg" alt="Mag. Volker Schattel" style="width:44px;height:44px;object-fit:cover;object-position:top;border-radius:50%" />
-        <p style="color:var(--soft);font-size:14px;line-height:1.5">
+        <p style="color:var(--soft);font-size:14px;line-height:1.5;flex:1;min-width:240px">
           Von <strong style="color:var(--ink);font-weight:600">Mag. Volker Schattel</strong> · Veröffentlicht am {datum}{aktualisiert && <> · Aktualisiert am {aktualisiert}</>}{frontmatter.stand && <> · Stand: {frontmatter.stand}</>}
         </p>
       </div>

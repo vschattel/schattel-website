@@ -36,11 +36,17 @@
 Volker Schattel führt jedes Mandat persönlich. Dahinter: Technik und KI mit eigenen
 Mitarbeitern im Haus, dazu ein eingespieltes Netzwerk aus Freelancern nach Bedarf.
 
+## Blog
+
+- [Autonome Buchhaltung: Wie eine KI unsere Belege kontiert und bucht](https://schattel.at/blog/autonome-buchhaltung-praxisbericht/): Praxisbericht aus dem eigenen Betrieb – die KI liest, kontiert und bucht nach Freigabe, ein Mensch sagt an drei Stellen Ja.
+- [Bauanleitung: KI an die Buchhaltungssoftware anbinden](https://schattel.at/blog/autonome-buchhaltung-bauanleitung/): Technischer Unterbau – Stufenmodell A–D, Leitplanken, Lernsystem, Datenschutz, Übertragung auf doppelte Buchhaltung.
+
 ## Kernseiten
 
 - [Startseite](https://schattel.at/): Positionierung, Leistungsfelder, Projekte
 - [Projekte](https://schattel.at/projekte/): Fälle im Detail
 - [Über uns](https://schattel.at/ueber/): Person, Aufbau, Arbeitsweise
+- [Blog](https://schattel.at/blog/): Praxisberichte und Bauanleitungen aus der Umsetzung
 - [Impressum & Datenschutz](https://schattel.at/impressum-datenschutz/)
 
 ## Kontakt

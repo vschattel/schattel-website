@@ -4,7 +4,7 @@ const posts = Object.values(import.meta.glob("./*.md", { eager: true })).sort(
   (a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf()
 );
 const fmt = (d) => new Date(d).toLocaleDateString("de-AT", { day: "2-digit", month: "2-digit", year: "numeric" });
-// TODO vor dem ersten Artikel: noindex entfernen + „Blog" in die Navigation (Base.astro, nav.main + .mnav)
+// noindex nur im Leerzustand (kein Artikel) – Nav-Punkt „Blog" steht seit 19.08.2026 in Base.astro
 const noindex = posts.length === 0;
 ---
 <Base title="Blog | Schattel" description="Aus der Umsetzung: Restrukturierung, kaufmännische Führung, Recruiting und KI in KMU – Erfahrungen und Systeme, die im eigenen Betrieb laufen." noindex={noindex}>

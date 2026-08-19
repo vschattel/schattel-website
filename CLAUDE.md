@@ -18,9 +18,10 @@ gemeinsames Dach-Designsystem.
 - Autorenzeile immer „Mag. Volker Schattel" mit Foto (Schattel-Regel, keine Hybrid-Autorenzeile).
 - Artikel-Quelle ist die Dropbox-Inbox `beruf/_web/artikel-inbox/` („nimm die Inbox"):
   übernehmen, nach Freigabe pushen, danach in der Inbox nach `erledigt/` verschieben.
-- **Solange kein Artikel liegt**, setzt die Blog-Übersicht automatisch `noindex` und
-  „Blog" steht NICHT in der Navigation. Mit dem ersten Artikel: „Blog" in `Base.astro`
-  einbauen (`nav.main` zwischen „Über uns" und „Erstgespräch", ebenso in `.mnav`).
+- Blog ist seit 19.08.2026 live (Nav-Punkt in `Base.astro`); die Übersicht setzt nur im
+  Leerzustand automatisch `noindex`. Externe Links im Artikeltext als HTML-Anker mit
+  `rel="noopener"`, CTA-Link als Anker mit Klasse `plausible-event-name=Termin`.
+- Nach jedem Artikel `public/llms.txt` (Abschnitt Blog) ergänzen.
 
 ### Design
 - Design ausschließlich über die bestehenden Tokens/Klassen in `src/layouts/Base.astro`.
