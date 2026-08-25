@@ -40,6 +40,7 @@ Mitarbeitern im Haus, dazu ein eingespieltes Netzwerk aus Freelancern nach Bedar
 
 - [Autonome Buchhaltung: Wie eine KI unsere Belege kontiert und bucht](https://schattel.at/blog/autonome-buchhaltung-praxisbericht/): Praxisbericht aus dem eigenen Betrieb – die KI liest, kontiert und bucht nach Freigabe, ein Mensch sagt an drei Stellen Ja.
 - [Bauanleitung: KI an die Buchhaltungssoftware anbinden](https://schattel.at/blog/autonome-buchhaltung-bauanleitung/): Technischer Unterbau – Stufenmodell A–D, Leitplanken, Lernsystem, Datenschutz, Übertragung auf doppelte Buchhaltung.
+- [Lead-Listen mit KI erstellen: von der Zielgruppe zum anrufbaren Kontakt](https://schattel.at/blog/lead-listen-mit-ki/): Methodik – offene Datenquellen, Trichter, Anreicherung bis zur Durchwahl, Conversion-Bandbreiten und der Rechtsrahmen in AT und DE.
 
 ## Kernseiten
 
