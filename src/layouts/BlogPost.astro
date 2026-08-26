@@ -6,7 +6,7 @@ const datum = fmt(frontmatter.date);
 const aktualisiert = frontmatter.aktualisiert ? fmt(frontmatter.aktualisiert) : null;
 const cal = "https://calendly.com/volkerschattel/schattel-at-erstberatung";
 ---
-<Base title={frontmatter.title + " | Schattel Blog"} description={frontmatter.description}>
+<Base title={frontmatter.title + " | Schattel Blog"} description={frontmatter.description} ogType="article">
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BlogPosting",

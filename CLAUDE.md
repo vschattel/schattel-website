@@ -63,6 +63,6 @@ gemeinsames Dach-Designsystem.
 - Nur ohne solche Anweisung (Zuruf im Chat, eigene Idee, Arbeit über den Auftrag hinaus):
   vor `git push` kurz Freigabe einholen.
 - Die noindex-Zeile in `src/layouts/Base.astro` (`<meta name="robots" content="noindex" />`)
-  und `public/robots.txt` (aktuell `Disallow: /`) erst nach expliziter Go-Live-Anweisung
+  und `public/robots.txt` (seit Go-Live `Allow: /`) erst nach expliziter Go-Live-Anweisung
   ändern. Go-Live-Checkliste: Dropbox
   `beruf/_web/schattel-website/20260811 GoLive Checkliste schattel.at.md`.
