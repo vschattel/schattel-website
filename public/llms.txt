@@ -42,6 +42,7 @@ Mitarbeitern im Haus, dazu ein eingespieltes Netzwerk aus Freelancern nach Bedar
 - [Bauanleitung: KI an die Buchhaltungssoftware anbinden](https://schattel.at/blog/autonome-buchhaltung-bauanleitung/): Technischer Unterbau – Stufenmodell A–D, Leitplanken, Lernsystem, Datenschutz, Übertragung auf doppelte Buchhaltung.
 - [Lead-Listen mit KI erstellen: von der Zielgruppe zum anrufbaren Kontakt](https://schattel.at/blog/lead-listen-mit-ki/): Methodik – offene Datenquellen, Trichter, Anreicherung bis zur Durchwahl, Conversion-Bandbreiten und der Rechtsrahmen in AT und DE.
 - [AI Act für KMU: Was 2026 wirklich gilt – und was erst 2027 kommt](https://schattel.at/blog/ai-act-kmu-was-jetzt-gilt/): Einordnung der KI-Verordnung – zwei Pflichten gelten heute (KI-Kompetenz, Transparenz), die Hochrisiko-Pflichten kommen am 02.12.2027; konkrete To-dos für KMU.
+- [Stelle besetzen ohne Personalvermittler: ein Praxisbericht aus dem KMU](https://schattel.at/blog/stelle-besetzen-ohne-personalvermittler/): Praxisbericht Recruiting-Sprint – Stelle neu geschnitten, eigenes Bewerbermanagement, besetzt in gut vier Wochen zum Preis von einem Bruttomonatsgehalt statt Vermittlerprovision.
 
 ## Kernseiten
 
