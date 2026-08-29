@@ -7,6 +7,7 @@ aktualisiert: 2026-08-19
 autor: "Volker Schattel"
 kategorie: "KI & Automatisierung"
 stand: "08/2026"
+ogImage: "https://schattel.at/assets/blog/stufenmodell-a-d-ki-buchhaltung.png"
 ---
 
 Dieser Artikel ist der technische Unterbau zum [Praxisbericht „Autonome Buchhaltung"](/blog/autonome-buchhaltung-praxisbericht/). Er beantwortet die Fragen, die dort offen bleiben mussten: Wie funktioniert die Anbindung technisch, welche Regeln machen sie sicher, was bedeutet das für Datenschutz und Betriebsprüfung – und was ändert sich, wenn Sie keine Einnahmen-Ausgaben-Rechnung führen, sondern doppelte Buchhaltung mit mehreren Beteiligten.
@@ -65,6 +66,11 @@ Im größeren Unternehmen heißt dieser Abschnitt nicht „Ordnerstruktur", sond
 ### Wie funktioniert das Stufenmodell A–D?
 
 Der Kern der Bauanleitung. Das System wird in vier Stufen aufgebaut, und jede Stufe muss sich beweisen, bevor die nächste freigeschaltet wird:
+
+<figure style="margin:28px 0">
+  <img src="/assets/blog/stufenmodell-a-d-ki-buchhaltung.svg" width="1600" height="900" loading="lazy" alt="Schaubild: Das Stufenmodell A bis D der autonomen Buchhaltung – A Lesen, B Vorschlagen, C Freigeben, D Buchen. Die Stufen A bis C schreiben nichts in die Buchhaltung; Stufe D bucht ausschließlich freigegebene Vorschläge mit harten Leitplanken." />
+  <figcaption style="font-size:13.5px;color:var(--soft);margin-top:8px">Das Stufenmodell A–D: Jede Stufe muss sich beweisen, bevor die nächste freigeschaltet wird.</figcaption>
+</figure>
 
 | Stufe | Was passiert | Was geschrieben wird | Risiko |
 |---|---|---|---|

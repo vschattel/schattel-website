@@ -5,8 +5,10 @@ const fmt = (d) => new Date(d).toLocaleDateString("de-AT", { day: "2-digit", mon
 const datum = fmt(frontmatter.date);
 const aktualisiert = frontmatter.aktualisiert ? fmt(frontmatter.aktualisiert) : null;
 const cal = "https://calendly.com/volkerschattel/schattel-at-erstberatung";
+const ogImage = frontmatter.ogImage || "https://schattel.at/og-image.png";
+const hasOwnImage = Boolean(frontmatter.ogImage);
 ---
-<Base title={frontmatter.title + " | Schattel Blog"} description={frontmatter.description} ogType="article">
+<Base title={frontmatter.title + " | Schattel Blog"} description={frontmatter.description} ogType="article" ogImage={ogImage} ogImageWidth={hasOwnImage ? 2400 : 1200} ogImageHeight={hasOwnImage ? 1350 : 630}>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -16,7 +18,7 @@ const cal = "https://calendly.com/volkerschattel/schattel-at-erstberatung";
     dateModified: frontmatter.aktualisiert || frontmatter.date,
     mainEntityOfPage: { "@type": "WebPage", "@id": new URL(Astro.url.pathname, "https://schattel.at").href },
     inLanguage: "de-AT",
-    image: "https://schattel.at/og-image.png",
+    image: ogImage,
     author: {
       "@type": "Person",
       name: "Mag. Volker Schattel",

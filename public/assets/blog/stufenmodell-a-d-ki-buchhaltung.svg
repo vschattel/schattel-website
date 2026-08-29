@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <!-- Grundfläche + Rahmen (Designsystem Dach: Karte #FDFCF9, Linie/Rahmen) -->
+  <rect x="0" y="0" width="1600" height="900" fill="#FDFCF9"/>
+  <rect x="10.5" y="10.5" width="1579" height="879" fill="none" stroke="#17191E" stroke-width="1"/>
+
+  <!-- Kicker -->
+  <circle cx="86" cy="92" r="6" fill="#9A671F"/>
+  <text x="106" y="99" font-size="21" letter-spacing="3.4" font-weight="600" fill="#565B63">AUTONOME BUCHHALTUNG</text>
+
+  <!-- Titel -->
+  <text x="80" y="162" font-size="48" font-weight="700" fill="#17191E">Das Stufenmodell <tspan font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#9A671F">A–D</tspan></text>
+  <text x="80" y="205" font-size="24" fill="#565B63">Jede Stufe muss sich beweisen, bevor die nächste freigeschaltet wird.</text>
+
+  <!-- Stufe A -->
+  <g>
+    <rect x="80.75" y="480.75" width="340" height="300" rx="12" fill="#FFFFFF" stroke="#17191E" stroke-width="1.5"/>
+    <text x="112" y="565" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="68" fill="#17191E">A</text>
+    <text x="112" y="618" font-size="29" font-weight="700" fill="#17191E">Lesen</text>
+    <text x="112" y="652" font-size="19" fill="#565B63">Die KI liest Kontenplan,</text>
+    <text x="112" y="679" font-size="19" fill="#565B63">Lieferanten, Rechnungen und</text>
+    <text x="112" y="706" font-size="19" fill="#565B63">Bankauszüge über die API.</text>
+    <line x1="112" y1="726" x2="388" y2="726" stroke="#E3E0D8" stroke-width="1.5"/>
+    <text x="112" y="756" font-size="18" fill="#565B63">Schreibt: <tspan font-weight="700" fill="#17191E">nichts</tspan> · Risiko: null</text>
+  </g>
+
+  <!-- Stufe B -->
+  <g>
+    <rect x="460.75" y="400.75" width="340" height="380" rx="12" fill="#FFFFFF" stroke="#17191E" stroke-width="1.5"/>
+    <text x="492" y="485" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="68" fill="#17191E">B</text>
+    <text x="492" y="538" font-size="29" font-weight="700" fill="#17191E">Vorschlagen</text>
+    <text x="492" y="572" font-size="19" fill="#565B63">Vollständige Buchungs-</text>
+    <text x="492" y="599" font-size="19" fill="#565B63">vorschläge mit Zuversichts-</text>
+    <text x="492" y="626" font-size="19" fill="#565B63">wert – in einer lokalen</text>
+    <text x="492" y="653" font-size="19" fill="#565B63">Warteschlange.</text>
+    <line x1="492" y1="726" x2="768" y2="726" stroke="#E3E0D8" stroke-width="1.5"/>
+    <text x="492" y="756" font-size="18" fill="#565B63">Schreibt: <tspan font-weight="700" fill="#17191E">nichts</tspan> · Risiko: null</text>
+  </g>
+
+  <!-- Stufe C -->
+  <g>
+    <rect x="840.75" y="320.75" width="340" height="460" rx="12" fill="#FFFFFF" stroke="#17191E" stroke-width="1.5"/>
+    <text x="872" y="405" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="68" fill="#17191E">C</text>
+    <text x="872" y="458" font-size="29" font-weight="700" fill="#17191E">Freigeben</text>
+    <text x="872" y="492" font-size="19" fill="#565B63">Der Mensch bestätigt oder</text>
+    <text x="872" y="519" font-size="19" fill="#565B63">korrigiert. Jede Korrektur</text>
+    <text x="872" y="546" font-size="19" fill="#565B63">wird gelernt und ab sofort</text>
+    <text x="872" y="573" font-size="19" fill="#565B63">als Regel angewendet.</text>
+    <line x1="872" y1="726" x2="1148" y2="726" stroke="#E3E0D8" stroke-width="1.5"/>
+    <text x="872" y="756" font-size="18" fill="#565B63">Schreibt: <tspan font-weight="700" fill="#17191E">nur Warteschlange</tspan></text>
+  </g>
+
+  <!-- Freigabe-Schwelle -->
+  <line x1="1200" y1="255" x2="1200" y2="780" stroke="#9A671F" stroke-width="1.5" stroke-dasharray="7 7"/>
+  <text x="1200" y="235" font-size="18" font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#9A671F" text-anchor="middle">nur Freigegebenes passiert</text>
+
+  <!-- Stufe D -->
+  <g>
+    <rect x="1220.75" y="270.75" width="340" height="510" rx="12" fill="#FFFFFF" stroke="#9A671F" stroke-width="2"/>
+    <text x="1252" y="355" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="68" fill="#9A671F">D</text>
+    <text x="1252" y="408" font-size="29" font-weight="700" fill="#17191E">Buchen</text>
+    <text x="1252" y="442" font-size="19" fill="#565B63">Nur freigegebene Vorschläge</text>
+    <text x="1252" y="469" font-size="19" fill="#565B63">gehen in die Buchhaltung –</text>
+    <text x="1252" y="496" font-size="19" fill="#565B63">inkl. Beleg-PDF, mit harten</text>
+    <text x="1252" y="523" font-size="19" fill="#565B63">Leitplanken im Programm,</text>
+    <text x="1252" y="550" font-size="19" fill="#565B63">nicht im Prompt.</text>
+    <line x1="1252" y1="726" x2="1528" y2="726" stroke="#E3E0D8" stroke-width="1.5"/>
+    <text x="1252" y="756" font-size="18" fill="#565B63">Schreibt: <tspan font-weight="700" fill="#17191E">Buchhaltung</tspan></text>
+  </g>
+
+  <!-- Klammern unter den Stufen -->
+  <path d="M 81 800 L 81 810 L 1180 810 L 1180 800" fill="none" stroke="#565B63" stroke-width="1.5"/>
+  <text x="630" y="845" font-size="20" fill="#565B63" text-anchor="middle">A–C schreiben nichts in die Buchhaltung – der Großteil des Nutzens, bei null Risiko</text>
+  <path d="M 1221 800 L 1221 810 L 1560 810 L 1560 800" fill="none" stroke="#9A671F" stroke-width="1.5"/>
+  <text x="1390" y="845" font-size="20" fill="#9A671F" text-anchor="middle">erst nach bewiesener Testphase</text>
+
+  <!-- Absender -->
+  <text x="1520" y="80" font-size="18" fill="#565B63" text-anchor="end">schattel.at</text>
+</svg>

@@ -7,6 +7,7 @@ aktualisiert: 2026-08-19
 autor: "Volker Schattel"
 kategorie: "KI & Automatisierung"
 stand: "08/2026"
+ogImage: "https://schattel.at/assets/blog/belegweg-autonome-buchhaltung.png"
 ---
 
 130 Belege pro Quartal, drei Zahlungswege: Bankkonto, Kreditkarte, PayPal. Früher hat mich die Buchhaltung meines Unternehmens zwei volle Tage pro Quartal gekostet – Belege sammeln, zuordnen, mit Kontobewegungen abgleichen, in die Buchhaltungssoftware eintragen. Heute landen die meisten Rechnungen per Mail im Eingangsrechnungs-Postfach und sind gebucht, bevor ich sie geöffnet habe. Die KI liest jeden Beleg, erkennt den Lieferanten, schlägt Konto und Steuerbehandlung vor, gleicht gegen die tatsächlichen Kontobewegungen ab – und nach meiner Freigabe bucht sie direkt in die Buchhaltungssoftware, samt angehängtem Beleg-PDF.
@@ -30,6 +31,11 @@ Der Ablauf besteht aus drei Schritten, mit klarer Rollenverteilung zwischen KI u
 **Schritt 1 – Die KI schlägt vor.** Sie liest die Beleg-PDFs selbst (auf die eingebaute Texterkennung der Buchhaltungssoftware verzichten wir bewusst – sie war zu schlecht), erkennt Lieferant, Betrag und Leistung, gleicht mit Kontenplan, Lieferantenstamm und den tatsächlichen Kontobewegungen ab und legt fertige Buchungsvorschläge in eine Warteschlange: Lieferant, Konto, Steuer, Datum, Betrag, Zuversichtswert.
 
 Die meisten Belege kommen dabei gar nicht mehr über einen Ordner herein, sondern per Mail im Eingangsrechnungs-Postfach. Was dem gewohnten Muster entspricht, wird direkt zum Buchungsvorschlag – ich bestätige den Stapel und fertig. Die Rechnung muss nicht geöffnet, nicht umbenannt, nicht von einem Ort an den anderen geschoben und nirgends hochgeladen werden. Wer schon einmal mit Make, Zapier oder n8n gearbeitet hat, kennt das Prinzip eines automatisierten Ablaufs; der Unterschied ist, dass hier kein starrer Regelbaum arbeitet, sondern ein System, das den Beleg tatsächlich versteht.
+
+<figure style="margin:28px 0">
+  <img src="/assets/blog/belegweg-autonome-buchhaltung.svg" width="1600" height="900" loading="lazy" alt="Schaubild: Der Belegweg der autonomen Buchhaltung in fünf Schritten – Beleg kommt per Mail an, die KI liest und versteht ihn, der Buchungsvorschlag wartet in der lokalen Warteschlange, ein Mensch gibt frei, erst dann wird gebucht. Parallel holt die Buchhaltungssoftware die Kontobewegungen per PSD2 selbst ab." />
+  <figcaption style="font-size:13.5px;color:var(--soft);margin-top:8px">Der Belegweg: von der Mail zur Buchung – der Zahlungsabgleich läuft nebenbei mit.</figcaption>
+</figure>
 
 **Schritt 2 – Der Mensch sagt „passt".** Ich sehe die Vorschläge als Liste und gebe frei – einzeln oder im Stapel. Korrigiere ich einen Vorschlag („nicht Fremdleistung, sondern Lizenzaufwand"), wird die Korrektur nicht nur übernommen, sondern gelernt.
 

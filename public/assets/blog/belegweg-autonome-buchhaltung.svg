@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="pfeil" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#17191E"/>
+    </marker>
+    <marker id="pfeilBronze" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#9A671F"/>
+    </marker>
+    <marker id="pfeilGrau" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#565B63"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="900" fill="#FDFCF9"/>
+  <rect x="10.5" y="10.5" width="1579" height="879" fill="none" stroke="#17191E" stroke-width="1"/>
+
+  <!-- Kicker + Titel -->
+  <circle cx="86" cy="92" r="6" fill="#9A671F"/>
+  <text x="106" y="99" font-size="21" letter-spacing="3.4" font-weight="600" fill="#565B63">AUTONOME BUCHHALTUNG</text>
+  <text x="80" y="162" font-size="48" font-weight="700" fill="#17191E">Der Belegweg: <tspan font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#9A671F">von der Mail zur Buchung</tspan></text>
+  <text x="80" y="205" font-size="24" fill="#565B63">Kein Öffnen, kein Umbenennen, kein Hochladen – der Beleg läuft durch.</text>
+
+  <!-- Lernschleife -->
+  <path d="M 1106 336 C 1106 240, 494 240, 494 336" fill="none" stroke="#9A671F" stroke-width="1.5" stroke-dasharray="7 7" marker-end="url(#pfeilBronze)"/>
+  <text x="800" y="255" font-size="19" font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#9A671F" text-anchor="middle">jede Korrektur wird zur Regel</text>
+
+  <!-- Schritt 1 -->
+  <g>
+    <rect x="52.75" y="340.75" width="272" height="230" rx="12" fill="#FFFFFF" stroke="#17191E" stroke-width="1.5"/>
+    <circle cx="84" cy="380" r="5" fill="#9A671F"/>
+    <text x="98" y="387" font-size="17" letter-spacing="2" font-weight="600" fill="#565B63">SCHRITT 1</text>
+    <text x="78" y="428" font-size="24" font-weight="700" fill="#17191E">Beleg kommt an</text>
+    <text x="78" y="462" font-size="17" fill="#565B63">Die Rechnung landet per</text>
+    <text x="78" y="488" font-size="17" fill="#565B63">Mail im Postfach. Niemand</text>
+    <text x="78" y="514" font-size="17" fill="#565B63">öffnet, benennt um oder</text>
+    <text x="78" y="540" font-size="17" fill="#565B63">lädt hoch.</text>
+  </g>
+  <line x1="326" y1="455" x2="356" y2="455" stroke="#17191E" stroke-width="1.5" marker-end="url(#pfeil)"/>
+
+  <!-- Schritt 2 -->
+  <g>
+    <rect x="358.75" y="340.75" width="272" height="230" rx="12" fill="#FFFFFF" stroke="#17191E" stroke-width="1.5"/>
+    <circle cx="390" cy="380" r="5" fill="#9A671F"/>
+    <text x="404" y="387" font-size="17" letter-spacing="2" font-weight="600" fill="#565B63">SCHRITT 2</text>
+    <text x="384" y="428" font-size="24" font-weight="700" fill="#17191E">KI liest + versteht</text>
+    <text x="384" y="462" font-size="17" fill="#565B63">Lieferant, Beträge, Steuer,</text>
+    <text x="384" y="488" font-size="17" fill="#565B63">Konto – auch bei Formaten,</text>
+    <text x="384" y="514" font-size="17" fill="#565B63">für die nie jemand eine</text>
+    <text x="384" y="540" font-size="17" fill="#565B63">Regel gebaut hat.</text>
+  </g>
+  <line x1="632" y1="455" x2="662" y2="455" stroke="#17191E" stroke-width="1.5" marker-end="url(#pfeil)"/>
+
+  <!-- Schritt 3 -->
+  <g>
+    <rect x="664.75" y="340.75" width="272" height="230" rx="12" fill="#FFFFFF" stroke="#17191E" stroke-width="1.5"/>
+    <circle cx="696" cy="380" r="5" fill="#9A671F"/>
+    <text x="710" y="387" font-size="17" letter-spacing="2" font-weight="600" fill="#565B63">SCHRITT 3</text>
+    <text x="690" y="428" font-size="24" font-weight="700" fill="#17191E">Vorschlag wartet</text>
+    <text x="690" y="462" font-size="17" fill="#565B63">Vollständiger Buchungs-</text>
+    <text x="690" y="488" font-size="17" fill="#565B63">vorschlag mit Zuversichts-</text>
+    <text x="690" y="514" font-size="17" fill="#565B63">wert. In der Buchhaltung:</text>
+    <text x="690" y="540" font-size="17" fill="#565B63">noch nichts.</text>
+  </g>
+  <line x1="938" y1="455" x2="968" y2="455" stroke="#17191E" stroke-width="1.5" marker-end="url(#pfeil)"/>
+
+  <!-- Schritt 4 -->
+  <g>
+    <rect x="970.75" y="340.75" width="272" height="230" rx="12" fill="#FFFFFF" stroke="#17191E" stroke-width="1.5"/>
+    <circle cx="1002" cy="380" r="5" fill="#9A671F"/>
+    <text x="1016" y="387" font-size="17" letter-spacing="2" font-weight="600" fill="#565B63">SCHRITT 4</text>
+    <text x="996" y="428" font-size="24" font-weight="700" fill="#17191E">Mensch gibt frei</text>
+    <text x="996" y="462" font-size="17" fill="#565B63">Stapel bestätigen oder</text>
+    <text x="996" y="488" font-size="17" fill="#565B63">korrigieren. Beträge über</text>
+    <text x="996" y="514" font-size="17" fill="#565B63">1.000 Euro laufen immer</text>
+    <text x="996" y="540" font-size="17" fill="#565B63">einzeln zur Freigabe.</text>
+  </g>
+  <line x1="1244" y1="455" x2="1274" y2="455" stroke="#17191E" stroke-width="1.5" marker-end="url(#pfeil)"/>
+
+  <!-- Schritt 5 -->
+  <g>
+    <rect x="1276.75" y="340.75" width="272" height="230" rx="12" fill="#FFFFFF" stroke="#9A671F" stroke-width="2"/>
+    <circle cx="1308" cy="380" r="5" fill="#9A671F"/>
+    <text x="1322" y="387" font-size="17" letter-spacing="2" font-weight="600" fill="#565B63">SCHRITT 5</text>
+    <text x="1302" y="428" font-size="24" font-weight="700" fill="#17191E">Buchung</text>
+    <text x="1302" y="462" font-size="17" fill="#565B63">Nur Freigegebenes wird</text>
+    <text x="1302" y="488" font-size="17" fill="#565B63">geschrieben, inkl. Beleg-</text>
+    <text x="1302" y="514" font-size="17" fill="#565B63">PDF – mit harten Leit-</text>
+    <text x="1302" y="540" font-size="17" fill="#565B63">planken im Programm.</text>
+  </g>
+
+  <!-- Bank-Spur -->
+  <g>
+    <rect x="52.75" y="650.75" width="272" height="150" rx="12" fill="#FDFCF9" stroke="#565B63" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <circle cx="84" cy="690" r="5" fill="#565B63"/>
+    <text x="98" y="697" font-size="17" letter-spacing="2" font-weight="600" fill="#565B63">PARALLEL</text>
+    <text x="78" y="736" font-size="25" font-weight="700" fill="#17191E">Bankkonto</text>
+    <text x="78" y="770" font-size="18" fill="#565B63">holt Kontobewegungen</text>
+    <text x="78" y="793" font-size="18" fill="#565B63">täglich selbst ab (PSD2).</text>
+  </g>
+  <path d="M 326 725 L 1412 725 L 1412 578" fill="none" stroke="#565B63" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#pfeilGrau)"/>
+  <text x="800" y="712" font-size="19" fill="#565B63" text-anchor="middle">Zahlungsabgleich läuft nebenbei mit – keine eigene Arbeitsschicht</text>
+
+  <!-- Absender -->
+  <text x="1520" y="80" font-size="18" fill="#565B63" text-anchor="end">schattel.at</text>
+</svg>
