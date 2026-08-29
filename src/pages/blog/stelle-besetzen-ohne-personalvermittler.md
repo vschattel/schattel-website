@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogPost.astro
 title: "Stelle besetzen ohne Personalvermittler: ein Praxisbericht aus dem KMU"
-description: "Wie ein Produktionsbetrieb eine kaufmännische Stelle in gut vier Wochen besetzt hat – mit minimalen Kosten statt Vermittlerprovision. Und mit einem System, das bleibt."
+description: "Wie ein Produktionsbetrieb eine kaufmännische Stelle in vier Wochen besetzt hat – ohne Vermittlerprovision, mit einem System, das bleibt."
 date: 2026-08-28
 aktualisiert: 2026-08-28
 autor: "Volker Schattel"
