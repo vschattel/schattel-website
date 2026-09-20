@@ -79,6 +79,6 @@ Bei den Daten gilt in beiden Ländern dasselbe: Wer personenbezogene Daten aus Q
 
 ## Vom Konzept zum laufenden System
 
-Zielbild, Quellen, Trichter, Entscheidungsvorlage, Loops – das ist die ganze Methode. Sie ist unspektakulär, und genau deshalb funktioniert sie in jeder Branche, in der Firmenkunden gewonnen werden: Das Ergebnis ist kein Foliensatz mit einer Vertriebsstrategie, sondern [ein System, das jeden Montag eine aktuelle, begründete, anrufbare Liste liefert](/blog/autonome-buchhaltung-praxisbericht/).
+Zielbild, Quellen, Trichter, Entscheidungsvorlage, Loops – das ist die ganze Methode. Sie ist unspektakulär, und genau deshalb funktioniert sie in jeder Branche, in der Firmenkunden gewonnen werden: Das Ergebnis ist kein Foliensatz mit einer Vertriebsstrategie, sondern [ein System, das jeden Montag eine aktuelle, begründete, anrufbare Liste liefert](/projekte/#vertrieb).
 
 Wenn Sie wissen wollen, wie das für Ihre Zielgruppe aussehen würde: Im Erstgespräch klären wir, welche Quellen es für Ihren Markt gibt und wie tief der Trichter werden muss.
