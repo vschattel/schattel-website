@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogPost.astro
 title: "Autonome Buchhaltung: Wie eine KI unsere Belege kontiert und bucht"
-description: "90 % der Belege kontiert und bucht bei uns eine KI. Ein Mensch sagt an drei Stellen Ja. Praxisbericht aus dem eigenen Betrieb – mit Bauanleitung."
+description: "Ziel: 90 % ohne Rückfrage. Eine KI kontiert und bucht unsere Belege, ein Mensch sagt an drei Stellen Ja. Praxisbericht aus dem eigenen Betrieb – mit Bauanleitung."
 date: 2026-08-19
 aktualisiert: 2026-09-20
 autor: "Volker Schattel"
