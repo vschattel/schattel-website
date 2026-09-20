@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 4321
+    },
+    {
+      "name": "schattel-dist",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4324", "--directory", "/private/tmp/claude-502/-Users-volkerschattel/46c93052-a4ed-4ced-afd7-c782afc61c11/scratchpad/dist"],
+      "port": 4324
     }
   ]
 }

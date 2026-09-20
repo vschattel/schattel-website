@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 title: "Bauanleitung: KI an die Buchhaltungssoftware anbinden"
 description: "Die vollständige Bauanleitung: Wie Sie eine KI sicher an Ihre Buchhaltung anbinden – Stufenmodell A–D, Leitplanken, Lernsystem, Datenschutz, Skalierung."
 date: 2026-08-19
-aktualisiert: 2026-08-19
+aktualisiert: 2026-09-20
 autor: "Volker Schattel"
 kategorie: "KI & Automatisierung"
 stand: "08/2026"
@@ -72,11 +72,11 @@ Der Kern der Bauanleitung. Das System wird in vier Stufen aufgebaut, und jede St
   <figcaption style="font-size:13.5px;color:var(--soft);margin-top:8px">Das Stufenmodell A–D: Jede Stufe muss sich beweisen, bevor die nächste freigeschaltet wird.</figcaption>
 </figure>
 
-| Stufe | Was passiert | Was geschrieben wird | Risiko |
+| Stufe | Was passiert | Was geschrieben wird | Eingriff in die Buchhaltung |
 |---|---|---|---|
-| **A – Lesen** | KI liest Kontenplan, Lieferanten, Rechnungen, Bankauszüge über die API | nichts | null |
-| **B – Vorschlagen** | KI erstellt vollständige Buchungsvorschläge (Lieferant, Konto, Steuer, Datum, Betrag, Zuversichtswert) in einer **lokalen Warteschlange** | nichts in der Buchhaltung | null |
-| **C – Freigeben** | Mensch prüft die Vorschläge, sagt „passt" oder korrigiert; jede Korrektur wird gelernt | nur die lokale Warteschlange | null |
+| **A – Lesen** | KI liest Kontenplan, Lieferanten, Rechnungen, Bankauszüge über die API | nichts | keiner |
+| **B – Vorschlagen** | KI erstellt vollständige Buchungsvorschläge (Lieferant, Konto, Steuer, Datum, Betrag, Zuversichtswert) in einer **lokalen Warteschlange** | nichts in der Buchhaltung | keiner |
+| **C – Freigeben** | Mensch prüft die Vorschläge, sagt „passt" oder korrigiert; jede Korrektur wird gelernt | nur die lokale Warteschlange | keiner |
 | **D – Buchen** | Ausschließlich freigegebene Vorschläge werden in die Buchhaltungssoftware geschrieben, inklusive Beleg-PDF | Buchhaltung, mit Leitplanken | kontrolliert |
 
 Zwei Konsequenzen dieses Aufbaus werden regelmäßig unterschätzt.
@@ -91,7 +91,7 @@ Stufe D wird erst durch Regeln vertretbar, die nicht in einem Prompt stehen, son
 
 1. **Kein Freitext-Buchen.** Das Buchungswerkzeug akzeptiert ausschließlich Vorschläge aus der Warteschlange mit Status „freigegeben". Ein direkter Buchungsbefehl existiert nicht.
 2. **Duplikatsprüfung vor jedem Schreiben.** Vor jedem Anlegen wird per Rechnungsnummer, Lieferant und Zeitraum geprüft, ob die Rechnung schon existiert – wichtig, weil viele APIs einen doppelt gesendeten Befehl klaglos doppelt ausführen.
-3. **Zahlung immer als getrennter zweiter Schritt.** Eine Rechnung wird nie gleichzeitig angelegt und als bezahlt markiert. Solange sie unbezahlt ist, lässt sie sich rückstandsfrei löschen – der Rückweg bleibt bei jedem Schritt offen.
+3. **Zahlung immer als getrennter zweiter Schritt.** Eine Rechnung wird nie gleichzeitig angelegt und als bezahlt markiert. Solange ein Vorschlag nicht verbucht ist, lässt er sich korrigieren oder verwerfen; Verbuchtes wird storniert, nicht gelöscht – Original und Änderung bleiben im Protokoll (§ 131 BAO). Der Rückweg bleibt bei jedem Schritt offen, nur nicht spurlos.
 4. **Betragsgrenze.** Belege über einer definierten Schwelle (bei uns 1.000 Euro) laufen nie im Stapel durch, sondern immer einzeln zur Freigabe.
 5. **Plausibilisierung vor dem Schreiben.** Zeilensummen gegen Belegbetrag, Steuerbetrag gegen Steuersatz; bei Abweichung geht der Beleg zurück in die Warteschlange statt in die Buchhaltung.
 6. **Lückenloses Protokoll.** Jede Schreiboperation wird vor und nach der Ausführung protokolliert. Bricht ein mehrstufiger Vorgang ab (Rechnung angelegt, PDF-Anhang fehlt noch), erkennt das System das beim nächsten Lauf und repariert, statt neu anzulegen.
@@ -117,7 +117,7 @@ Die vergessene Hälfte der Buchhaltung. Für wiederkehrende Leistungen (Betreuun
 
 Je regelmäßiger Ihre Fakturierung, desto größer der Hebel. Dazu kommt der Zeitfaktor E-Rechnung:
 
-- **Deutschland:** Seit 01.01.2025 müssen Unternehmen E-Rechnungen empfangen können. Die Pflicht zur Ausstellung greift gestaffelt – ab 01.01.2027 für Unternehmen mit einem Vorjahresumsatz über 800.000 Euro, ab 01.01.2028 für alle übrigen B2B-Umsätze. Kleinunternehmer nach § 19 UStG sind von der Ausstellungspflicht befreit. Rechtsgrundlage ist <a href="https://www.gesetze-im-internet.de/ustg_1980/__14.html" rel="noopener">§ 14 UStG</a> in der Fassung des Wachstumschancengesetzes; das Format muss der Norm EN 16931 entsprechen (XRechnung, ZUGFeRD ab Profil Comfort).
+- **Deutschland:** Seit 01.01.2025 müssen Unternehmen E-Rechnungen empfangen können. Die Pflicht zur Ausstellung gilt für Umsätze zwischen zwei in Deutschland ansässigen Unternehmen – ein österreichischer Betrieb, der deutschen Kunden Rechnungen stellt, ist nicht erfasst – und greift gestaffelt: ab 01.01.2027 für Unternehmen mit einem Vorjahresumsatz über 800.000 Euro, ab 01.01.2028 für alle übrigen; EDI-Verfahren haben ebenfalls bis Ende 2027 Zeit. Ausgenommen bleiben Kleinunternehmer nach § 19 UStG, Kleinbetragsrechnungen bis 250 Euro, Fahrausweise und bestimmte steuerfreie Umsätze. Rechtsgrundlage ist <a href="https://www.gesetze-im-internet.de/ustg_1980/__14.html" rel="noopener">§ 14 UStG</a> in der Fassung des Wachstumschancengesetzes; das Format muss der Norm EN 16931 entsprechen (XRechnung, ZUGFeRD ab Profil Comfort).
 - **Österreich:** keine allgemeine B2B-Pflicht. Verpflichtend sind strukturierte Rechnungen nur gegenüber dem Bund, seit 2014 über <a href="https://www.erechnung.gv.at/" rel="noopener">erechnung.gv.at</a>. Für innergemeinschaftliche B2B-Umsätze kommt die Pflicht über die EU-Richtlinie ViDA ((EU) 2025/516) ab 01.07.2030; für reine Inlandsgeschäfte entscheidet Österreich selbst, ein Zeitplan liegt bislang nicht vor.
 
 Wer seine Rechnungsdaten jetzt sauber strukturiert, erledigt die Pflichtübung gleich mit. (Stand: 08/2026.)
@@ -127,7 +127,7 @@ Wer seine Rechnungsdaten jetzt sauber strukturiert, erledigt die Pflichtübung g
 Bevor das System schreiben durfte, musste es prüfen können – der komplette Altbestand mehrerer Jahre wurde kontrolliert. Die Funde sind ein Lehrstück darüber, wo klassische Automatik systematisch danebenliegt:
 
 - **Software auf dem falschen Konto.** Die eingebaute Texterkennung hatte Software-Anschaffungen des Vorjahres dem Anlagevermögen zugeordnet, obwohl sie dort nicht hingehörten. Ergebniswirksam war das nicht – die Abschreibung als geringwertiges Wirtschaftsgut war ordnungsgemäß erfolgt. Der Schaden war ein anderer: ein aufgeblähtes Anlagenverzeichnis und eine Kontierung, die bei jeder späteren Auswertung in die Irre führt.
-- **Die OSS-Vorsteuerfalle.** Ausländische Digitalanbieter weisen über das One-Stop-Shop-Verfahren österreichische beziehungsweise deutsche Umsatzsteuer aus. Diese Steuer ist **keine abziehbare Vorsteuer** – der Anbieter führt sie über OSS ab, ein Vorsteuerabzug steht dem Empfänger nicht zu. Erkennbar daran, dass die Rechnung keine inländische UID des Anbieters trägt und die eigene UID fehlt. Die Konsequenz ist doppelt: Vorsteuerkorrektur – und beim Anbieter die eigene UID hinterlegen, damit künftig Netto- beziehungsweise Reverse-Charge-Rechnungen kommen.
+- **Die OSS-Vorsteuerfalle.** Ausländische Digitalanbieter rechnen Betriebe, die keine UID hinterlegt haben, wie Privatkunden ab: mit österreichischer beziehungsweise deutscher Umsatzsteuer, abgeführt über den One-Stop-Shop. Für eine B2B-Leistung wäre aber Reverse Charge richtig – die ausgewiesene Steuer ist damit zu Unrecht ausgewiesen und **keine abziehbare Vorsteuer**. Erkennbar am Zusammentreffen: keine inländische UID des Anbieters, eigene UID fehlt auf der Rechnung. Die Konsequenz ist dreifach: Vorsteuerkorrektur, Reverse Charge nachträglich erfassen (Steuerschuld und – bei vollem Abzugsrecht – Vorsteuer in derselben Erklärung) und beim Anbieter die eigene UID hinterlegen, damit künftig Netto-Rechnungen kommen.
 - **Kleinvieh mit System:** doppelt erfasste Belege (Abos haben systembedingt identische Beträge – Duplikate erkennt man an Rechnungsnummer plus Lieferant, nicht am Betrag), mehrfach angelegte Lieferanten im Stamm, eine Zahlung im falschen Wirtschaftsjahr.
 
 Diese Fehlerbilder sind nicht exotisch – sie entstehen überall dort, wo Vorschlagsautomatik auf Zeitdruck trifft. Eine KI-Prüfung des Bestands ist deshalb auch als eigenständige Maßnahme sinnvoll, ganz ohne Buchungsautomatisierung.
@@ -140,13 +140,13 @@ Für die Stammdaten gilt dasselbe im Kleinen: Dublette Lieferanten, uneinheitlic
 
 ### Was ändert sich bei doppelter Buchhaltung?
 
-Das beschriebene System läuft in einer Einnahmen-Ausgaben-Rechnung. Dieser Unterschied ist allerdings kleiner, als er wirkt: Die Software führt im Hintergrund ohnehin eine doppelte Buchhaltung, die Einnahmen-Ausgaben-Rechnung ist nur die Auswertungssicht darauf. Für die Umstellung müsste im Kern **eine Regel getauscht werden** – statt des Zahlungszeitpunkts wird das Rechnungsdatum zum Buchungsdatum. Alles darüber bleibt, wie es ist.
+Das beschriebene System läuft in einer Einnahmen-Ausgaben-Rechnung. Dieser Unterschied ist allerdings kleiner, als er wirkt: Die Software führt im Hintergrund ohnehin eine doppelte Buchhaltung, die Einnahmen-Ausgaben-Rechnung ist nur die Auswertungssicht darauf. Für die Umstellung müsste im Kern **eine Regel getauscht werden** – statt des Zahlungszeitpunkts entscheidet die wirtschaftliche Zuordnung: Rechnungsdatum, Leistungszeitraum und Zahlungsdatum sind drei getrennte Felder, nicht eines. Alles darüber bleibt, wie es ist.
 
 Für Bilanzierer gilt deshalb, ehrlich sortiert:
 
 **Unverändert übertragbar:** Belegerkennung und -extraktion, Lieferanten-Zuordnung, Duplikatsprüfung, das Stufenmodell, sämtliche Leitplanken, das Lernsystem, der Ausgangsrechnungslauf.
 
-**Anders, aber lösbar:** Periodenabgrenzung statt Zufluss-Abfluss – Rechnungs- und Zahlungsdatum sind zwei getrennte Ereignisse mit eigener Logik. Personenkonten und Offene-Posten-Verwaltung kommen dazu; der Zahlungsabgleich wird dadurch strukturierter, nicht schwerer. Kostenstellen und Kostenträger sind für die KI schlicht eine weitere Klassifikationsdimension – sie braucht dafür Regeln, keine Wunder. Anlagenbuchhaltung mit AfA-Läufen bleibt Sache der Buchhaltungssoftware; die KI liefert die korrekte Zuordnung zu.
+**Anders, aber lösbar:** Periodenabgrenzung statt Zufluss-Abfluss – Rechnungs-, Leistungs- und Zahlungsdatum sind drei getrennte Ereignisse mit eigener Logik. Personenkonten und Offene-Posten-Verwaltung kommen dazu; der Zahlungsabgleich wird dadurch strukturierter, nicht schwerer. Kostenstellen und Kostenträger sind für die KI schlicht eine weitere Klassifikationsdimension – sie braucht dafür Regeln, keine Wunder. Anlagenbuchhaltung mit AfA-Läufen bleibt Sache der Buchhaltungssoftware; die KI liefert die korrekte Zuordnung zu.
 
 **Wirklich anspruchsvoller:** Freigabeketten über mehrere Personen – die KI füllt das bestehende Vier-Augen-Prinzip vor, ersetzt aber keine Zuständigkeitsordnung; die will vorher geklärt sein. Mehr Belegquellen und Vorsysteme (ERP, Warenwirtschaft, Reisekosten) bedeuten mehr Schnittstellen im Erstprojekt. Intercompany-Verrechnung und Konsolidierung liegen außerhalb dessen, was dieses Konzept abdeckt.
 

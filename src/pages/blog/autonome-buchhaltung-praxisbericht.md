@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 title: "Autonome Buchhaltung: Wie eine KI unsere Belege kontiert und bucht"
 description: "90 % der Belege kontiert und bucht bei uns eine KI. Ein Mensch sagt an drei Stellen Ja. Praxisbericht aus dem eigenen Betrieb – mit Bauanleitung."
 date: 2026-08-19
-aktualisiert: 2026-08-19
+aktualisiert: 2026-09-20
 autor: "Volker Schattel"
 kategorie: "KI & Automatisierung"
 stand: "08/2026"
@@ -41,7 +41,7 @@ Die meisten Belege kommen dabei gar nicht mehr über einen Ordner herein, sonder
 
 Ein Beispiel aus dem Alltag: Ein neuer Anbieter taucht zum ersten Mal auf, das System kennt ihn nicht und fragt nach – welches Konto, welche Steuerbehandlung? Ich antworte einmal. Ab der nächsten Rechnung dieses Anbieters kommt keine Frage mehr, sondern ein fertiger Vorschlag, den ich nur noch bestätige. Nach ein paar Durchläufen bleiben genau die Fälle übrig, die tatsächlich eine Entscheidung brauchen. Die Freigabearbeit ist deshalb kein Kontrollaufwand, der ewig gleich bleibt – sie baut sich ab.
 
-**Schritt 3 – Die KI bucht.** Nur freigegebene Vorschläge werden in die Buchhaltungssoftware geschrieben, inklusive Beleg-PDF am Buchungssatz. Die Zahlung wird bewusst als getrennter zweiter Schritt erfasst – solange eine Rechnung als unbezahlt geführt ist, lässt sie sich rückstandsfrei wieder entfernen. Der Rückweg bleibt immer offen.
+**Schritt 3 – Die KI bucht.** Nur freigegebene Vorschläge werden in die Buchhaltungssoftware geschrieben, inklusive Beleg-PDF am Buchungssatz. Die Zahlung wird bewusst als getrennter zweiter Schritt erfasst. Was noch nicht verbucht ist, lässt sich korrigieren oder verwerfen; was verbucht ist, wird storniert – Original und Korrektur bleiben nachvollziehbar, wie es § 131 BAO verlangt. Der Rückweg bleibt immer offen, nur nicht spurlos.
 
 ## Das Konto ist angehängt – deshalb stimmt der Abgleich immer
 
@@ -61,7 +61,7 @@ Vertrauen entsteht hier nicht durch gute Erfahrung, sondern durch harte Regeln, 
 - Jede Schreiboperation landet in einem lückenlosen Protokoll. Bricht ein Vorgang ab, wird er beim nächsten Lauf repariert statt doppelt angelegt.
 - Und die wichtigste Regel: **Die KI rechnet nicht.** Preise, Summen und Steuersätze kommen aus den Stammdaten der Buchhaltungssoftware, nicht aus einem Sprachmodell. Die KI ordnet zu, gleicht ab und orchestriert – die Zahlen selbst sind deterministisch. Die verbreitete Sorge, eine KI könnte sich bei der Rechnung „verrechnen", trifft dieses System deshalb nicht.
 
-Der Aufbau folgte einem Stufenmodell: erst nur lesen, dann vorschlagen, dann freigeben – und erst nach ausgiebiger Testphase durfte das System tatsächlich buchen. Die meisten Automatisierungsprojekte scheitern, weil sie mit dem Buchen anfangen. Die ersten drei Stufen liefern bereits den Großteil des Nutzens, bei null Risiko. Wie das Stufenmodell im Detail funktioniert, steht in der [Bauanleitung](/blog/autonome-buchhaltung-bauanleitung/).
+Der Aufbau folgte einem Stufenmodell: erst nur lesen, dann vorschlagen, dann freigeben – und erst nach ausgiebiger Testphase durfte das System tatsächlich buchen. Die meisten Automatisierungsprojekte scheitern, weil sie mit dem Buchen anfangen. Die ersten drei Stufen liefern bereits den Großteil des Nutzens, ohne dass die KI etwas in der Buchhaltung anfasst – Zugriffs- und Datenschutz braucht es freilich schon ab Stufe A. Wie das Stufenmodell im Detail funktioniert, steht in der [Bauanleitung](/blog/autonome-buchhaltung-bauanleitung/).
 
 ## Der Nebeneffekt: Die KI fand Fehler, die jahrelang niemand sah
 
@@ -69,7 +69,7 @@ Bevor das System buchen durfte, musste es beweisen, dass es prüfen kann. Also l
 
 Die eingebaute Texterkennung hatte im Vorjahr Software-Anschaffungen dem Anlagevermögen zugeordnet, obwohl sie dort nichts verloren hatten. Ergebniswirksam war das nicht – die Abschreibung als geringwertiges Wirtschaftsgut war ordnungsgemäß erfolgt. Es stand schlicht auf dem falschen Konto und blähte das Anlagenverzeichnis mit Positionen auf, die dort nicht hingehören. Kein Drama, aber genau die Sorte Unsauberkeit, die man selbst nicht mehr sieht, wenn man jedes Quartal durch dieselbe Liste scrollt.
 
-Der zweite Fund wog schwerer: Bei mehreren ausländischen Anbietern war ausgewiesene Umsatzsteuer als Vorsteuer abgezogen worden, obwohl sie über das OSS-Verfahren abgeführt wird und damit nicht abzugsfähig ist – ein Fehler, der aktuell in sehr vielen Unternehmen unbemerkt Geld kostet. Dazu doppelt erfasste Belege, doppelte Lieferanten im Stamm und eine Zahlung im falschen Wirtschaftsjahr.
+Der zweite Fund wog schwerer: Bei mehreren ausländischen Digitalanbietern war ausgewiesene Umsatzsteuer als Vorsteuer abgezogen worden – die Anbieter hatten uns wie Privatkunden abgerechnet und die Steuer über das OSS-Verfahren abgeführt. Richtig wäre Reverse Charge gewesen: Die zu Unrecht ausgewiesene Steuer ist keine Vorsteuer, und die Reverse-Charge-Steuer muss der Empfänger selbst erklären. Ein Fehler, der in sehr vielen Unternehmen unbemerkt Geld kostet. Dazu doppelt erfasste Belege, doppelte Lieferanten im Stamm und eine Zahlung im falschen Wirtschaftsjahr.
 
 Das waren meine Bücher, geführt mit marktüblicher Software und normaler Sorgfalt. Und genau hier entsteht der Effekt, den ich vorher unterschätzt hatte: **Vertrauen in so ein System baut sich nicht auf, indem es fehlerfrei bucht, sondern indem es Fehler findet, die man selbst nicht gesehen hat.** Wer die Prüfung des Altbestands als lästige Vorarbeit abtut, verschenkt den besten Test, den er bekommen kann – und die Prüfung allein rechnet sich oft schon, ganz ohne Buchungsautomatik. Der Nutzen ist deshalb nicht nur Zeit, sondern Prüfungssicherheit.
 
@@ -77,7 +77,7 @@ Das waren meine Bücher, geführt mit marktüblicher Software und normaler Sorgf
 
 Mein Unternehmen ist bewusst der Testfall: klein genug, dass ein Fehler nur mich trifft, ernst genug, dass es echte Buchhaltung mit echten Steuerterminen ist. Die Grundmechanik – Belege erkennen, zuordnen, abgleichen, lernen, kontrolliert schreiben – ist nicht größenabhängig. Das Setup wurde inzwischen auf einen weiteren Betrieb übertragen.
 
-Der Sprung zur GmbH ist dabei kleiner, als er klingt. Ich führe zwar eine Einnahmen-Ausgaben-Rechnung, aber die Software bucht im Hintergrund ohnehin doppelt. Für die Umstellung müsste im Kern eine einzige Regel getauscht werden: Statt des Zahlungszeitpunkts wird das Rechnungsdatum zum Buchungsdatum. Die gesamte Mechanik darüber – Belegerkennung, Lieferantenzuordnung, Leitplanken, Lernspeicher, Freigabe – bleibt unverändert.
+Der Sprung zur GmbH ist dabei kleiner, als er klingt. Ich führe zwar eine Einnahmen-Ausgaben-Rechnung, aber die Software bucht im Hintergrund ohnehin doppelt. Für die Umstellung müsste im Kern eine Regel getauscht werden: Statt des Zahlungszeitpunkts zählt die wirtschaftliche Zuordnung – Rechnungsdatum, Leistungszeitraum und Zahlungsdatum werden getrennt geführt, und was über den Periodenwechsel reicht, wird abgegrenzt. Die gesamte Mechanik darüber – Belegerkennung, Lieferantenzuordnung, Leitplanken, Lernspeicher, Freigabe – bleibt unverändert.
 
 Was bei doppelter Buchhaltung und mehreren Beteiligten tatsächlich dazukommt: Periodenabgrenzung, Personenkonten und offene Posten, Kostenstellen als zusätzliche Dimension, und die Freigabe ist kein Chat-„passt" mehr, sondern das bestehende Vier-Augen-Prinzip – die KI ersetzt die Freigabe nicht, sie füllt sie vor. Bei 800 Eingangsrechnungen im Monat ist der Hebel entsprechend größer als bei 130 im Quartal; das ist eine Hochrechnung, keine Messung, aber die Richtung ist eindeutig. Die Unterschiede im Detail behandelt die [Bauanleitung](/blog/autonome-buchhaltung-bauanleitung/).
 

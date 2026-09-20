@@ -31,7 +31,7 @@ const hasOwnImage = Boolean(frontmatter.ogImage);
   <section>
     <article class="wrap" style="max-width:760px">
       <div class="kicker">{frontmatter.kategorie}</div>
-      <h1 style="font-size:clamp(30px,4vw,42px)">{frontmatter.title}</h1>
+      <h1 style="font-size:clamp(30px,4vw,42px);overflow-wrap:break-word;hyphens:auto">{frontmatter.title}</h1>
       <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:32px">
         <img class="sw" src="/assets/volker.jpg" alt="Mag. Volker Schattel" style="width:44px;height:44px;object-fit:cover;object-position:top;border-radius:50%" />
         <p style="color:var(--soft);font-size:14px;line-height:1.5;flex:1;min-width:240px">
@@ -66,5 +66,7 @@ const hasOwnImage = Boolean(frontmatter.ogImage);
     .prosa img { max-width: 100%; height: auto; border-radius: var(--radius); }
     .prosa table { width: 100%; border-collapse: collapse; font-size: 15px; margin-bottom: 16px; }
     .prosa th, .prosa td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .tabelle-scroll { overflow-x: auto; max-width: 100%; margin-bottom: 16px; }
+    .tabelle-scroll table { margin-bottom: 0; min-width: 100%; }
   </style>
 </Base>

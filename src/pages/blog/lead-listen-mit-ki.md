@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 title: "Lead-Listen mit KI erstellen: von der Zielgruppe zum anrufbaren Kontakt"
 description: "B2B-Lead-Listen mit KI selbst bauen: offene Datenquellen, Trichter, Anreicherung bis zur Durchwahl. Methode, Conversion-Bandbreiten, Rechtsrahmen AT und DE."
 date: 2026-08-25
-aktualisiert: 2026-08-25
+aktualisiert: 2026-09-20
 autor: "Volker Schattel"
 kategorie: "KI & Automatisierung"
 stand: "08/2026"
@@ -57,7 +57,9 @@ Die folgenden Bandbreiten sind Erfahrungswerte aus unseren Projekten – sie hä
 | Erstkontakt erreicht (binnen 2 Wochen) | 15–30 % | oberes Drittel, mit gutem Aufhänger |
 | Erstkontakt → qualifiziertes Gespräch | 10–25 % | über 20 % |
 | Qualifiziert → Abschluss | 5–15 % | zweistellig |
-| Ende zu Ende (Rohliste → Abschluss) | 0,3–1 % | nahe 1 % |
+| Qualifizierte Zielfirma → Abschluss | rund 0,1–1 % | nahe 1 % |
+
+Jede Zeile bezieht sich auf die Stufe davor; die letzte fasst die drei Kontaktstufen zusammen.
 
 Das klingt nach wenig – bis man rechnet: Bei einer Rohliste im mittleren dreistelligen Bereich erreichten wir in einem Projekt binnen einer Woche rund ein Viertel der Kontakte und daraus die ersten Abschlüsse. Ein einziger guter Abschluss deckt den gesamten Aufwand für Aufbau und Betrieb der Liste um ein Vielfaches.
 
@@ -69,11 +71,11 @@ Die Datenkosten liegen oft bei null, weil öffentliche Register und Eigenrecherc
 
 Zwei Punkte entscheiden, ob aus der schönsten Liste ein Problem wird: die Ansprache und die Daten selbst. Bei der Ansprache unterscheiden sich die beiden Märkte deutlich – wer in AT und DE gleichzeitig akquiriert, braucht je Land ein eigenes Kanalfeld in der Liste.
 
-**In Österreich** ist die Lage streng und einfach zugleich: <a href="https://www.ris.bka.gv.at/eli/bgbl/i/2021/190" rel="noopener">§ 174 TKG 2021</a> verbietet Anrufe und elektronische Post zu Werbezwecken ohne vorherige Einwilligung – auch im B2B, auch beim Erstkontakt. Der rechtssichere Kaltkanal ist der personalisierte Brief; daneben funktionieren LinkedIn und angewärmte Kontakte über Netzwerk und Empfehlungen.
+**In Österreich** ist die Lage streng und einfach zugleich: <a href="https://www.ris.bka.gv.at/eli/bgbl/i/2021/190" rel="noopener">§ 174 TKG 2021</a> verbietet Anrufe und elektronische Post zu Werbezwecken ohne vorherige Einwilligung – auch im B2B, auch beim Erstkontakt. Der rechtssichere Kaltkanal ist der personalisierte Brief – er braucht eine Rechtsgrundlage für die Daten (berechtigtes Interesse) und endet beim Widerspruch. Daneben funktionieren öffentliche LinkedIn-Beiträge und angewärmte Kontakte über Netzwerk und Empfehlungen; werbliche Direktnachrichten auf LinkedIn sind dagegen elektronische Post und brauchen dieselbe Einwilligung wie eine E-Mail.
 
-**In Deutschland** regelt das <a href="https://www.gesetze-im-internet.de/uwg_2004/__7.html" rel="noopener">§ 7 UWG</a>, und der unterscheidet nach Kanal: E-Mail-Werbung braucht auch dort eine ausdrückliche vorherige Einwilligung (mit einer engen Ausnahme für Bestandskunden). Beim Telefon ist das B2B-Geschäft aber milder gestellt – gegenüber Unternehmen genügt die mutmaßliche Einwilligung, also ein aus dem Geschäftsgegenstand ableitbares sachliches Interesse am Angebot. Der gut vorbereitete, fachlich begründete Kaltanruf ist damit in Deutschland im B2B möglich, in Österreich nicht. Der Brief ist in beiden Ländern zulässig, bis der Empfänger widerspricht.
+**In Deutschland** regelt das <a href="https://www.gesetze-im-internet.de/uwg_2004/__7.html" rel="noopener">§ 7 UWG</a>, und der unterscheidet nach Kanal: E-Mail-Werbung braucht auch dort eine ausdrückliche vorherige Einwilligung (mit einer engen Ausnahme für Bestandskunden). Beim Telefon ist das B2B-Geschäft aber milder gestellt – gegenüber Unternehmen genügt die mutmaßliche Einwilligung. Die Latte liegt allerdings höher, als viele glauben: Es müssen konkrete Umstände dafür sprechen, dass gerade dieser Betrieb an gerade diesem Anruf ein sachliches Interesse hat (BGH I ZR 27/08); dass das Angebot zur Branche passt, reicht nicht. Der gut vorbereitete, im Einzelfall begründete Kaltanruf ist damit in Deutschland im B2B möglich, in Österreich nicht – und genau dafür ist der Aufhänger je Firma aus Schritt 4 da. Der Brief ist in beiden Ländern zulässig, bis der Empfänger widerspricht.
 
-Bei den Daten gilt in beiden Ländern dasselbe: Wer personenbezogene Daten aus Quellen Dritter verarbeitet, muss die Betroffenen nach <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679" rel="noopener">Art. 14 DSGVO</a> spätestens beim Erstkontakt informieren, und Registerdaten unterliegen teils einer Zweckbindung. All das ist mit überschaubarem Aufwand sauber lösbar – wenn man es von Anfang an mitplant statt nachträglich.
+Bei den Daten gilt in beiden Ländern dasselbe: Wer personenbezogene Daten aus Quellen Dritter verarbeitet, muss die Betroffenen nach <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679" rel="noopener">Art. 14 DSGVO</a> informieren – spätestens einen Monat nach Erhebung, bei früherem Erstkontakt oder Weitergabe schon dann –, und Registerdaten unterliegen teils einer Zweckbindung. All das ist mit überschaubarem Aufwand sauber lösbar – wenn man es von Anfang an mitplant statt nachträglich.
 
 ## Vom Konzept zum laufenden System
 

@@ -3,13 +3,13 @@ layout: ../../layouts/BlogPost.astro
 title: "Stelle besetzen ohne Personalvermittler: ein Praxisbericht aus dem KMU"
 description: "Wie ein Produktionsbetrieb eine kaufmännische Stelle in vier Wochen besetzt hat – ohne Vermittlerprovision, mit einem System, das bleibt."
 date: 2026-08-28
-aktualisiert: 2026-08-28
+aktualisiert: 2026-09-20
 autor: "Volker Schattel"
 kategorie: "Personal & Recruiting"
 stand: "08/2026"
 ---
 
-Ein Personalvermittler kostet bei einer Besetzung üblicherweise 25 bis 35 % des Jahresbruttos – bei einer 48.000-€-Stelle sind das 12.000 bis 16.000 €, drei bis vier Monatsgehälter. Dieser Bericht erzählt, wie ein Produktionsbetrieb in Süddeutschland dieselbe Aufgabe anders gelöst hat: Stelle besetzt in gut vier Wochen, mit minimalen Kosten – und, das ist der eigentliche Punkt, mit einem Recruiting-System, das dem Betrieb danach gehört.
+Ein Personalvermittler kostet bei einer Besetzung üblicherweise 25 bis 35 % des Jahresbruttos – bei einer 48.000-€-Stelle sind das 12.000 bis 16.800 €, drei bis gut vier Monatsgehälter. Dieser Bericht erzählt, wie ein Produktionsbetrieb in Süddeutschland dieselbe Aufgabe anders gelöst hat: Stelle besetzt in gut vier Wochen, mit minimalen Kosten – und, das ist der eigentliche Punkt, mit einem Recruiting-System, das dem Betrieb danach gehört.
 
 ## Die Ausgangslage: ausgeschrieben war schon – nur beworben hat sich niemand Passendes
 
