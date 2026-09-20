@@ -20,7 +20,7 @@
     <text x="112" y="679" font-size="19" fill="#565B63">Lieferanten, Rechnungen und</text>
     <text x="112" y="706" font-size="19" fill="#565B63">Bankauszüge über die API.</text>
     <line x1="112" y1="726" x2="388" y2="726" stroke="#E3E0D8" stroke-width="1.5"/>
-    <text x="112" y="756" font-size="18" fill="#565B63">Schreibt: <tspan font-weight="700" fill="#17191E">nichts</tspan> · Risiko: null</text>
+    <text x="112" y="756" font-size="18" fill="#565B63">Schreibt: <tspan font-weight="700" fill="#17191E">nichts</tspan> · kein Eingriff</text>
   </g>
 
   <!-- Stufe B -->
@@ -33,7 +33,7 @@
     <text x="492" y="626" font-size="19" fill="#565B63">wert – in einer lokalen</text>
     <text x="492" y="653" font-size="19" fill="#565B63">Warteschlange.</text>
     <line x1="492" y1="726" x2="768" y2="726" stroke="#E3E0D8" stroke-width="1.5"/>
-    <text x="492" y="756" font-size="18" fill="#565B63">Schreibt: <tspan font-weight="700" fill="#17191E">nichts</tspan> · Risiko: null</text>
+    <text x="492" y="756" font-size="18" fill="#565B63">Schreibt: <tspan font-weight="700" fill="#17191E">nichts</tspan> · kein Eingriff</text>
   </g>
 
   <!-- Stufe C -->
@@ -69,7 +69,7 @@
 
   <!-- Klammern unter den Stufen -->
   <path d="M 81 800 L 81 810 L 1180 810 L 1180 800" fill="none" stroke="#565B63" stroke-width="1.5"/>
-  <text x="630" y="845" font-size="20" fill="#565B63" text-anchor="middle">A–C schreiben nichts in die Buchhaltung – der Großteil des Nutzens, bei null Risiko</text>
+  <text x="630" y="845" font-size="20" fill="#565B63" text-anchor="middle">A–C schreiben nichts in die Buchhaltung – und liefern schon den Großteil des Nutzens</text>
   <path d="M 1221 800 L 1221 810 L 1560 810 L 1560 800" fill="none" stroke="#9A671F" stroke-width="1.5"/>
   <text x="1390" y="845" font-size="20" fill="#9A671F" text-anchor="middle">erst nach bewiesener Testphase</text>
 

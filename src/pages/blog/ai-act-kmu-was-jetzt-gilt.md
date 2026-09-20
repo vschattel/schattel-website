@@ -39,7 +39,7 @@ Die richtige Vorbereitung ist keine Compliance-Akrobatik, sondern eine Inventur:
 
 ## Die DSGVO gilt daneben weiter – und ist meist die härtere Hürde
 
-Der AI Act ersetzt die DSGVO nicht. Personenbezogene Daten in einem KI-Werkzeug brauchen dieselbe Grundlage wie in jeder anderen Software: Rechtsgrundlage, Auftragsverarbeitungsvertrag, Zugriffskontrolle, Löschkonzept. In der Beratungspraxis scheitern KI-Projekte fast nie am AI Act – sie scheitern daran, dass niemand vorher geklärt hat, welche Daten das Werkzeug sehen darf.
+Der AI Act ersetzt die DSGVO nicht. Personenbezogene Daten in einem KI-Werkzeug brauchen dieselbe Grundlage wie in jeder anderen Software: Rechtsgrundlage, Zugriffskontrolle, Löschkonzept und – sobald ein externer Dienstleister die Daten für Sie verarbeitet – ein Auftragsverarbeitungsvertrag. In der Beratungspraxis scheitern KI-Projekte fast nie am AI Act – sie scheitern daran, dass niemand vorher geklärt hat, welche Daten das Werkzeug sehen darf.
 
 Wer es strenger braucht: EU-gehostete Modelle oder ein Open-Weight-Modell im eigenen Betrieb reduzieren die datenschutzrechtlichen Risiken spürbar – sie ersetzen aber keine DSGVO-konforme Verarbeitung: Rechtsgrundlage, Zugriffskontrolle und Löschkonzept braucht es auch dann – und einen Auftragsverarbeitungsvertrag überall dort, wo ein externer Dienstleister die Daten für Sie verarbeitet, beim Hoster etwa; der rein interne Betrieb braucht ihn nicht.
 
