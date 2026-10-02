@@ -44,6 +44,7 @@ Mitarbeitern im Haus, dazu ein eingespieltes Netzwerk aus Freelancern nach Bedar
 - [AI Act für KMU: Was 2026 wirklich gilt – und was erst 2027 kommt](https://schattel.at/blog/ai-act-kmu-was-jetzt-gilt/): Einordnung der KI-Verordnung – zwei Pflichten gelten heute (KI-Kompetenz, Transparenz), die Hochrisiko-Pflichten kommen am 02.12.2027; konkrete To-dos für KMU.
 - [Stelle besetzen ohne Personalvermittler: ein Praxisbericht aus dem KMU](https://schattel.at/blog/stelle-besetzen-ohne-personalvermittler/): Praxisbericht Recruiting-Sprint – Stelle neu geschnitten, eigenes Bewerbermanagement, besetzt in gut vier Wochen zum Preis von einem Bruttomonatsgehalt statt Vermittlerprovision.
 - [Datenmigration im KMU: zwei Praxisfälle – und warum das Format entscheidet](https://schattel.at/blog/datenmigration-kmu-praxisbericht/): Doppel-Praxisbericht – ERP-Stammdaten nach DATEV und Lieferantenkataloge nach Shopify; KI für Duplikate und Verifikation, deterministische Skripte fürs Rechnen, Importformate als letzter Meter.
+- [Erklärvideo mit KI per One-Shot: 58 Sekunden Film aus einem Auftrag](https://schattel.at/blog/erklaervideo-ki-one-shot/): Ein Auftrag an Claude Code, rund 50 Minuten Bauzeit, 58 Sekunden Film ohne fremde Bild- oder Musikrechte – wie das Erklärvideo entstand, was der One-Shot nicht liefert, dazu amtliche Zahlen und eine eigene Trendfortschreibung zu KI in KMU in Österreich und Deutschland bis 2031.
 
 ## Kernseiten
 

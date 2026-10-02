@@ -8,7 +8,7 @@ const cal = "https://calendly.com/volkerschattel/schattel-at-erstberatung";
 const ogImage = frontmatter.ogImage || "https://schattel.at/og-image.png";
 const hasOwnImage = Boolean(frontmatter.ogImage);
 ---
-<Base title={frontmatter.title + " | Schattel Blog"} description={frontmatter.description} ogType="article" ogImage={ogImage} ogImageWidth={hasOwnImage ? 2400 : 1200} ogImageHeight={hasOwnImage ? 1350 : 630}>
+<Base title={frontmatter.title + " | Schattel Blog"} description={frontmatter.description} ogType="article" ogImage={ogImage} ogImageWidth={frontmatter.ogImageWidth || (hasOwnImage ? 2400 : 1200)} ogImageHeight={frontmatter.ogImageHeight || (hasOwnImage ? 1350 : 630)}>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -28,6 +28,16 @@ const hasOwnImage = Boolean(frontmatter.ogImage);
     },
     publisher: { "@type": "Organization", name: "Schattel", url: "https://schattel.at", logo: { "@type": "ImageObject", url: "https://schattel.at/favicon-schattel-512.png" } }
   })} />
+  {frontmatter.video && <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: frontmatter.video.name,
+    description: frontmatter.video.description,
+    thumbnailUrl: frontmatter.video.thumbnailUrl,
+    contentUrl: frontmatter.video.contentUrl,
+    uploadDate: frontmatter.video.uploadDate,
+    duration: frontmatter.video.duration
+  })} />}
   <section>
     <article class="wrap" style="max-width:760px">
       <div class="kicker">{frontmatter.kategorie}</div>
