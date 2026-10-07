@@ -10,8 +10,9 @@
 
 - **Restrukturierung & Sanierungsbegleitung** – Steuerung in der Krise.
 - **Kaufmännische Führung auf Zeit** – Finanzen, Controlling, Reporting.
-- **Personal: Recruiting & Payroll** – Recruiting-Sprints; die laufende Lohnverrechnung
-  läuft über die Payroll-Marke LohnLotsen (lohnlotsen.at).
+- **Personal: Recruiting & Payroll** – Recruiting mit System
+  (https://schattel.at/recruiting-mit-system/): offene Stelle besetzen, Recruiting übergeben;
+  die laufende Lohnverrechnung läuft über die Payroll-Marke LohnLotsen (lohnlotsen.at).
 - **KI & Automatisierung** – Prozesse und Daten, die allein laufen.
 
 ## Belege aus Mandaten
@@ -22,8 +23,8 @@
 - 100 % remote, dokumentiert statt anwesend.
 - Personalbereich von null aufgebaut (Holzbau, Süddeutschland): Bewerbermanagement,
   digitale Akte, Gehaltssystem, HR-Dashboard, rund zehn Positionen besetzt, intern übergeben.
-- Stelle besetzt für einen Bruchteil der üblichen Kosten (Produktionsbetrieb): rund zehn
-  Beratungsstunden, keine Provision.
+- Stelle besetzt für einen Bruchteil der üblichen Kosten (Produktionsbetrieb): Stelle neu
+  geschnitten, in gut vier Wochen besetzt, rund 16 Beratungsstunden, keine Provision.
 - Projektrentabilität sichtbar gemacht (Einrichtungsbetrieb): belastbare Antwort nach Tagen,
   direkt aus ERP-Exporten, ohne BI-Projekt.
 - Über 5.000 Datensätze veredelt (österreichisches Medienhaus): Geo-Zuordnung, Duplikate,
@@ -42,9 +43,10 @@ Mitarbeitern im Haus, dazu ein eingespieltes Netzwerk aus Freelancern nach Bedar
 - [Bauanleitung: KI an die Buchhaltungssoftware anbinden](https://schattel.at/blog/autonome-buchhaltung-bauanleitung/): Technischer Unterbau – Stufenmodell A–D, Leitplanken, Lernsystem, Datenschutz, Übertragung auf doppelte Buchhaltung.
 - [Lead-Listen mit KI erstellen: von der Zielgruppe zum anrufbaren Kontakt](https://schattel.at/blog/lead-listen-mit-ki/): Methodik – offene Datenquellen, Trichter, Anreicherung bis zur Durchwahl, Conversion-Bandbreiten und der Rechtsrahmen in AT und DE.
 - [AI Act für KMU: Was 2026 wirklich gilt – und was erst 2027 kommt](https://schattel.at/blog/ai-act-kmu-was-jetzt-gilt/): Einordnung der KI-Verordnung – zwei Pflichten gelten heute (KI-Kompetenz, Transparenz), die Hochrisiko-Pflichten kommen am 02.12.2027; konkrete To-dos für KMU.
-- [Stelle besetzen ohne Personalvermittler: ein Praxisbericht aus dem KMU](https://schattel.at/blog/stelle-besetzen-ohne-personalvermittler/): Praxisbericht Recruiting-Sprint – Stelle neu geschnitten, eigenes Bewerbermanagement, besetzt in gut vier Wochen zum Preis von einem Bruttomonatsgehalt statt Vermittlerprovision.
+- [Stelle besetzen ohne Personalvermittler: ein Praxisbericht aus dem KMU](https://schattel.at/blog/stelle-besetzen-ohne-personalvermittler/): Praxisbericht Recruiting mit System – Stelle neu geschnitten, eigenes Bewerbermanagement, besetzt in gut vier Wochen mit rund 16 Beratungsstunden statt Vermittlerprovision.
 - [Datenmigration im KMU: zwei Praxisfälle – und warum das Format entscheidet](https://schattel.at/blog/datenmigration-kmu-praxisbericht/): Doppel-Praxisbericht – ERP-Stammdaten nach DATEV und Lieferantenkataloge nach Shopify; KI für Duplikate und Verifikation, deterministische Skripte fürs Rechnen, Importformate als letzter Meter.
 - [Erklärvideo mit KI per One-Shot: 58 Sekunden Film aus einem Auftrag](https://schattel.at/blog/erklaervideo-ki-one-shot/): Ein Auftrag an Claude Code, rund 50 Minuten Bauzeit, 58 Sekunden Film ohne fremde Bild- oder Musikrechte – wie das Erklärvideo entstand, was der One-Shot nicht liefert, dazu amtliche Zahlen und eine eigene Trendfortschreibung zu KI in KMU in Österreich und Deutschland bis 2031.
+- [KI-Recruiter Jack & Jill: Wenn zwei KIs die Bewerbung ersetzen](https://schattel.at/blog/ki-recruiter-jack-and-jill/): Bei Jack & Jill stimmen sich zwei KI-Agenten ab – ohne Bewerbung. Wie das funktioniert, was fehlt und was es für die Personalsuche im KMU bedeutet.
 
 ## Kernseiten
 

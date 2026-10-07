@@ -38,6 +38,9 @@ gemeinsames Dach-Designsystem.
 - Impressum: voller Gewerbewortlaut („Unternehmensberatung einschließlich
   Unternehmensorganisation", § 94 Z 74 GewO, GISA 21742118, WKO Tirol).
 - Personalverrechner-/BiBuG-Themen gehören zu LohnLotsen, nicht hierher.
+- Das Recruiting-Angebot heißt „Recruiting mit System" (/recruiting-mit-system/);
+  „Recruiting-Sprint" und die Preisformel „ein Bruttomonatsgehalt" sind seit 07.10.2026
+  überholt und dürfen nirgends mehr auftauchen.
 
 ### Inhalte
 - Ton: kurz, direkt, Sie-Form; konkrete Zahlen statt Superlative.
