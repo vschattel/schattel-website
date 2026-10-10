@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/BlogPost.astro
 title: "Autonome Buchhaltung: Wie eine KI unsere Belege kontiert und bucht"
-description: "Ziel: 90 % ohne Rückfrage. Eine KI kontiert und bucht unsere Belege, ein Mensch sagt an drei Stellen Ja. Praxisbericht aus dem eigenen Betrieb – mit Bauanleitung."
+description: "Über 90 % ohne Rückfrage. Eine KI kontiert und bucht unsere Belege, ein Mensch sagt an drei Stellen Ja. Praxisbericht aus dem eigenen Betrieb – mit Bauanleitung."
 date: 2026-08-19
-aktualisiert: 2026-09-20
+aktualisiert: 2026-10-10
 autor: "Volker Schattel"
 kategorie: "KI & Automatisierung"
-stand: "08/2026"
+stand: "10/2026"
 ogImage: "https://schattel.at/assets/blog/belegweg-autonome-buchhaltung.png"
 ---
 
@@ -42,6 +42,8 @@ Die meisten Belege kommen dabei gar nicht mehr über einen Ordner herein, sonder
 Ein Beispiel aus dem Alltag: Ein neuer Anbieter taucht zum ersten Mal auf, das System kennt ihn nicht und fragt nach – welches Konto, welche Steuerbehandlung? Ich antworte einmal. Ab der nächsten Rechnung dieses Anbieters kommt keine Frage mehr, sondern ein fertiger Vorschlag, den ich nur noch bestätige. Nach ein paar Durchläufen bleiben genau die Fälle übrig, die tatsächlich eine Entscheidung brauchen. Die Freigabearbeit ist deshalb kein Kontrollaufwand, der ewig gleich bleibt – sie baut sich ab.
 
 In Zahlen: Im zweiten Quartal 2026, der Einlernphase, kamen 48 von 69 Belegen ohne Rückfrage als fertiger Vorschlag – 70 Prozent. Die 21 Rückfragen waren fast alle Erstfälle: zwölfmal dieselbe neue Steuerregel für ausländische Digitalanbieter, dreimal die Steuerlogik eines Lieferanten, dreimal die internen Lohnjournale, zwei neue Lieferanten, eine Kontenfrage. Jede dieser Antworten ist seither eine Regel. Für den nächsten Lauf bleiben rechnerisch nur neue Anbieter und Beträge über der Freigabegrenze übrig – rund 90 Prozent ohne Rückfrage sind für den eingefahrenen Betrieb deshalb eine vorsichtige Annahme, keine Messung aus der Einlernphase.
+
+Nachtrag Q3/2026: Im ersten Quartal nach der Einlernphase blieben zwei bis drei Rückfragen übrig – alle zu Fällen, die so noch nie vorgekommen waren. Die 90 Prozent waren damit vorsichtig angesetzt. Das ganze Quartal samt Ausgangsrechnungen hat rund zwei Stunden gekostet, anderthalb davon Kontrolle.
 
 **Schritt 3 – Die KI bucht.** Nur freigegebene Vorschläge werden in die Buchhaltungssoftware geschrieben, inklusive Beleg-PDF am Buchungssatz. Die Zahlung wird bewusst als getrennter zweiter Schritt erfasst. Was noch nicht verbucht ist, lässt sich korrigieren oder verwerfen; was verbucht ist, wird storniert – Original und Korrektur bleiben nachvollziehbar, wie es § 131 BAO verlangt. Der Rückweg bleibt immer offen, nur nicht spurlos.
 
