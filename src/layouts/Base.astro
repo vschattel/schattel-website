@@ -39,7 +39,7 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
   address: { "@type": "PostalAddress", streetAddress: "Perlachweg 574c", postalCode: "6073", addressLocality: "Sistrans", addressCountry: "AT" },
   founder: { "@type": "Person", name: "Mag. Volker Schattel" },
   areaServed: ["AT", "DE", "CH"],
-  knowsAbout: ["Restrukturierung", "Sanierungsbegleitung", "Interim Management", "Kaufmännische Führung", "Controlling", "Liquiditätsplanung", "Recruiting", "Personalverrechnung", "KI-Automatisierung", "Datenmigration"],
+  knowsAbout: ["Personalaufbau", "Recruiting", "KI-Automatisierung", "Datenmigration", "Kaufmännische Führung", "Controlling", "Liquiditätsplanung", "Restrukturierung", "Sanierungsbegleitung", "Interim Management", "Personalverrechnung"],
   sameAs: ["https://lohnlotsen.at", "https://www.linkedin.com/in/volkerschattel/"]
 })} />
 <script type="application/ld+json" set:html={JSON.stringify({
@@ -49,7 +49,7 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
   jobTitle: "Unternehmensberater",
   url: "https://schattel.at/",
   worksFor: { "@type": "Organization", name: "Schattel", url: "https://schattel.at" },
-  knowsAbout: ["Restrukturierung", "Sanierungsbegleitung", "Kaufmännische Führung auf Zeit", "Controlling", "Recruiting", "KI-Automatisierung in KMU"],
+  knowsAbout: ["Personalaufbau", "Recruiting", "KI-Automatisierung in KMU", "Kaufmännische Führung auf Zeit", "Controlling", "Restrukturierung", "Sanierungsbegleitung"],
   address: { "@type": "PostalAddress", streetAddress: "Perlachweg 574c", postalCode: "6073", addressLocality: "Sistrans", addressCountry: "AT" },
   sameAs: ["https://www.linkedin.com/in/volkerschattel/", "https://lohnlotsen.at"]
 })} />
@@ -59,7 +59,7 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
     --line:#E3E0D8; --radius:12px;
     --sans:"Instrument Sans Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
     --serif:Georgia,"Times New Roman",serif;
-    --accent:#9A671F; --accent-soft:#F3EBDD; --dunkel:#111216;
+    --accent:#9A671F; --accent-text:#8C5D1B; --accent-soft:#F3EBDD; --dunkel:#111216;
   }
   *{box-sizing:border-box;margin:0}
   body{font-family:var(--sans);background:var(--papier);color:var(--ink);line-height:1.65;font-size:17px}
@@ -69,7 +69,7 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
   h1{font-size:clamp(38px,5.4vw,60px);line-height:1.08;letter-spacing:-.02em;font-weight:650;margin:18px 0 20px}
   h2{font-size:clamp(27px,3.4vw,38px);line-height:1.15;letter-spacing:-.015em;font-weight:650;margin-bottom:14px}
   h3{font-size:19px;font-weight:650}
-  .em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent)}
+  .em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent-text)}
   p.lead{font-size:19px;color:var(--soft);max-width:58ch}
   a{color:inherit}
   .btn{display:inline-block;padding:13px 28px;border-radius:999px;font-size:13px;font-weight:650;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
@@ -95,7 +95,7 @@ const canonical = new URL(Astro.url.pathname, "https://schattel.at").href;
   .grid{display:grid;gap:20px}
   .foto{border-radius:var(--radius);display:block;width:100%;height:auto}
   .sw{filter:grayscale(1) contrast(1.04)}
-  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:3px 12px}
+  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);border:1px solid var(--accent);border-radius:999px;padding:3px 12px}
   footer.familie{border-top:1px solid var(--line);padding:34px 0;font-size:14px;color:var(--soft)}
   footer.familie .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   footer.familie a{color:var(--soft)}

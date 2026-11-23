@@ -7,7 +7,7 @@ const fmt = (d) => new Date(d).toLocaleDateString("de-AT", { day: "2-digit", mon
 // noindex nur im Leerzustand (kein Artikel) – Nav-Punkt „Blog" steht seit 19.08.2026 in Base.astro
 const noindex = posts.length === 0;
 ---
-<Base title="Blog | Schattel" description="Aus der Umsetzung: Restrukturierung, kaufmännische Führung, Recruiting und KI in KMU – Erfahrungen und Systeme, die im eigenen Betrieb laufen." noindex={noindex}>
+<Base title="Blog | Schattel" description="Aus der Umsetzung: Personalaufbau, Recruiting, KI, kaufmännische Führung und Restrukturierung in KMU – Erfahrungen und Systeme aus dem eigenen Betrieb." noindex={noindex}>
   <section>
     <div class="wrap" style="max-width:820px">
       <div class="kicker">Blog</div>
@@ -23,7 +23,7 @@ const noindex = posts.length === 0;
                 <span class="tag">{p.frontmatter.kategorie}</span>
                 <span style="font-size:13px;color:var(--soft)">{fmt(p.frontmatter.date)}</span>
               </div>
-              <h3 style="margin-top:12px">{p.frontmatter.title}</h3>
+              <h2 style="margin-top:12px;margin-bottom:0;font-size:19px;line-height:1.65;letter-spacing:normal">{p.frontmatter.title}</h2>
               <p style="color:var(--soft);font-size:15px;margin-top:6px">{p.frontmatter.description}</p>
             </a>
           ))}

@@ -15,7 +15,7 @@ Wir setzen KI produktiv im eigenen Betrieb und in Mandaten ein – die Frage „
 
 ## Was verschoben wurde – und was nicht
 
-Der <a href="https://www.wko.at/datenschutz/eu-verordnung-kuenstliche-intelligenz" rel="noopener">Digital Omnibus on AI</a>, seit Sommer 2026 in Kraft, hat die Pflichten für Hochrisiko-Systeme nach Anhang III der <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024R1689" rel="noopener">KI-Verordnung</a> – darunter ausdrücklich KI im Bereich **Beschäftigung und Personalmanagement** – vom 02.08.2026 auf den **02.12.2027** verschoben; für Hochrisiko-Systeme nach Anhang I gilt der 02.08.2028. Der Grund ist pragmatisch: Die harmonisierten Normen, an denen sich die Konformitätsbewertung in der Praxis orientieren soll, sind schlicht nicht fertig – ohne sie ist der Nachweis möglich, aber deutlich aufwendiger.
+Der <a href="https://www.wko.at/digitalisierung/ai-act-eu" rel="noopener">Digital Omnibus on AI</a>, seit Sommer 2026 in Kraft, hat die Pflichten für Hochrisiko-Systeme nach Anhang III der <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024R1689" rel="noopener">KI-Verordnung</a> – darunter ausdrücklich KI im Bereich **Beschäftigung und Personalmanagement** – vom 02.08.2026 auf den **02.12.2027** verschoben; für Hochrisiko-Systeme nach Anhang I gilt der 02.08.2028. Der Grund ist pragmatisch: Die harmonisierten Normen, an denen sich die Konformitätsbewertung in der Praxis orientieren soll, sind schlicht nicht fertig – ohne sie ist der Nachweis möglich, aber deutlich aufwendiger.
 
 Nicht verschoben wurde alles andere: die verbotenen Praktiken (seit 02.02.2025), die KI-Kompetenzpflicht (seit 02.02.2025, seit Juli 2026 entschärft – dazu gleich), die Pflichten für Anbieter großer KI-Modelle (seit 08/2025) und die Transparenzpflichten (seit 02.08.2026). Wer aus der Verschiebung „der AI Act ist abgesagt" macht, liest ihn so falsch wie die, die 2024 den Weltuntergang ankündigten.
 
@@ -56,7 +56,7 @@ Das ist auch unsere Kernthese für jedes KMU: **Wer KI-Systeme so baut, dass er 
 3. **Kennzeichnung prüfen:** Chatbots seit 02.08.2026 als KI ausweisen, Deepfakes offenlegen; die Nachfrist bis 02.12.2026 gilt nur für die maschinenlesbare Kennzeichnung durch Anbieter älterer Systeme.
 4. **Anhang-III-Check terminieren:** Wer KI in Personalentscheidungen einsetzt oder das plant, klärt bis Mitte 2027, ob die Hochrisiko-Pflichten greifen. Heute ist das keine dringende Pflicht – ab dem 02.12.2027 aber eine, und wer erst dann damit anfängt, kommt zu spät.
 
-In Österreich ist übrigens noch keine nationale Aufsichtsbehörde benannt; Anlaufstelle für Fragen ist die KI-Servicestelle der <a href="https://www.rtr.at/" rel="noopener">RTR</a>. Verbindliche Grundlage bleibt der <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024R1689" rel="noopener">Verordnungstext</a>; einen laufend aktualisierten Überblick führt die <a href="https://www.wko.at/datenschutz/eu-verordnung-kuenstliche-intelligenz" rel="noopener">WKO</a>.
+In Österreich ist übrigens noch keine nationale Aufsichtsbehörde benannt; Anlaufstelle für Fragen ist die KI-Servicestelle der <a href="https://www.rtr.at/" rel="noopener">RTR</a>. Verbindliche Grundlage bleibt der <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024R1689" rel="noopener">Verordnungstext</a>; einen laufend aktualisierten Überblick führt die <a href="https://www.wko.at/digitalisierung/ai-act-eu" rel="noopener">WKO</a>.
 
 ## Der erste Schritt
 
